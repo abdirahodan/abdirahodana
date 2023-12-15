@@ -8,11 +8,11 @@ show_audio_link: true
 audio_link_label: "How to say my name"
 link_list_label: "Interests" # bookmarks, elsewhere, etc.
 link_list:
-- name: Paris
+- name: Plant
   url: https://en.wikipedia.org/wiki/Paris
-- name: Pastries
+- name: Public Policy
   url: https://en.wikipedia.org/wiki/Pastry
-- name: People
+- name: Social Justice
   url: https://en.wikipedia.org/wiki/People
 ---
 
