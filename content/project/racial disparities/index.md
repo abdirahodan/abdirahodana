@@ -7,12 +7,10 @@ draft: false
 tags:
   - hugo-site
 categories:
-  - Theme Features
+  - inequality
   - R
-  - package
+  - social science
 layout: single
----
-{{< here >}}
 ---
 In this project, we delve into the complex dynamics of student loan debt and its impact on different racial groups. Student loan debt has become a significant concern in today's society, affecting millions of individuals striving for higher education. However, it is crucial to recognize that the burden of student loans may not be evenly distributed among racial groups.
 Throughout this analysis, we will leverage the capabilities of R to explore and visualize the data, aiming to uncover patterns and trends related to student loan debt among different racial groups.
