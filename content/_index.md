@@ -4,7 +4,7 @@ subtitle: "Data Consultant"
 description: "i like making charts pretty. the github is private!<3"
 date: 2019-02-18T12:27:33-06:00
 images:
-  - img/unicorn-megaphone.png
+  - img/frontpage.png
 image_left: false
 text_align_left: true
 show_social_links: true # specify social accounts in site config
