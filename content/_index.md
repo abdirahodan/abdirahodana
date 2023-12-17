@@ -13,6 +13,7 @@ action_link: /about
 action_label: "Read More &rarr;"
 action_type: text # text, button
 type: home
+layout: split-left
 ---
 
 ** index doesn't contain a body, just front matter above.
