@@ -45,6 +45,7 @@ Update that file and you're ready to begin receiving submissions. Just submit
 the active form for the first time, and complete the email address verification
 step with Formspree, and your contact form is live. The next time someone
 fills it out, the submission will land in your inbox.
+![Formspree Logo](formspree-logo.png)
 
 ### Multiple Layouts
 
