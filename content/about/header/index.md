@@ -7,4 +7,5 @@ headline: |
 ---
 
 <!-- this is a subheadline -->
-I'm a driven 20-something Somali-American from Chicago who moved to Paris for an unexpected job opportunity. I've been tasked with bringing an American point of view to a venerable French marketing firm. :fr:
+I’m a driven 20-something Somali-American, passionate about using data for positive change. My interests are in data science, economics, and public service. I’m looking for a career where I can use my data skills to improve public services. My goal is to make a difference in people’s lives through smart, data-driven decisions.
+
