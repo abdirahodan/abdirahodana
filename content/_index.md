@@ -1,7 +1,7 @@
 ---
 title: "Hodan Abdirahman"
 subtitle: "Data Consultant"
-description: "i like making charts pretty. the github is private!<3"
+description: "i like making charts pretty."
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/frontpage.png
