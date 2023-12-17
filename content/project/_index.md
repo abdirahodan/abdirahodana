@@ -1,6 +1,6 @@
 ---
 title: Evolving Perspectives: A Portfolio of Data Discoveries
-description: "This is a home to a variety of projects, including personal initiatives as well as those completed for courses. The majority, if not all, are developed using R."
+description: "Home to a variety of projects, including personal initiatives as well as those completed for courses. The majority, if not all, are developed using R."
 author: "The R Markdown Team @RStudio"
 show_post_thumbnail: true
 show_author_byline: true
