@@ -5,8 +5,8 @@ description: "i like making charts pretty. the github is private!<3"
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/frontpage.png
-image_left: false
-text_align_left: true
+image_left: true
+text_align_left: false
 show_social_links: true # specify social accounts in site config
 show_action_link: true
 action_link: /about
