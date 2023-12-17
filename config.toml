@@ -76,24 +76,16 @@ enableEmoji = true
   [[params.social]]
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://github.com/apreshill/apero"
+      url       = "https://github.com/abdirahodan"
   [[params.social]]
-      icon      = "facebook-square" # icon name without the 'fa-'
+      icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.facebook.com/hashtag/ap%C3%A9ro"
+      url       = "https://orcid.org/0009-0000-4597-9150"
   [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
+      icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.instagram.com/explore/tags/apero/"
-  [[params.social]]
-      icon      = "twitter" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://twitter.com/hashtag/apéro"
-  [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
-
+      url       = "https://www.linkedin.com/in/hodan-abdirahman-169a611aa/"
+      
 [taxonomies]
   category = "categories"
   series = "series"
