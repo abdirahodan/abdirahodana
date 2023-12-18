@@ -84,7 +84,7 @@ ggplot(states_sample, aes(x = year, y = colony_n, color = months)) +
 Most states display a similar pattern of fluctuation in colony numbers across years and months. For example, Pennsylvanian and Vermont display peaks in between fall to winter and fall rather than summer. Meanwhile, California stands out for having a relatively stable colony count over time, without the seasonal highs and lows seen in other states. One commonality is that all states are missing data for April through June of 2018. This gap in the middle of the year makes it difficult to fully assess seasonal trends for that time period. Additional years of data could help determine if 2018 is an anomaly or if spring months regularly lack measurements.
 
 
-##Overall Trends
+## Overall Trends
 
 This analysis looks at recent 5-year colony trends between 2015-2019 given the available data range. To prepare the data, I filtered the data set to only include complete years within this period for valid comparisons. Examining the states with extreme high or low net changes over this short time frame highlights rapidly improving or worsening areas that may warrant closer investigation.
 
@@ -119,72 +119,51 @@ correlation_result <- cor.test(mites_data$stress_pct, mites_data$colony_lost_pct
 ```
 ![Formspree Logo](stats.png)
 
+```toml
+ggplot(mites_data, aes(x = stress_pct, y = colony_lost_pct)) +
+  geom_point(color="brown") +
+  labs(title = "Correlation between Varroa mites and Colony Loss Rates",
+       x = "Varroa mites",
+       y = "Colony Loss Rates (%)")+
+  theme_minimal()
+```
+![Formspree Logo](correlation.png)
+As we can see there is a steady slow increase, between the factors of Varroa mites and the percentage of bee colonies lost.
+
+The statistical test to measure the correlation, states there does seem to be a significant connection between these two factors. Specifically, the analysis showed that when a higher percentage of colonies have Varroa mite infestations, a higher percentage of colonies are also lost. And when fewer colonies have mites, fewer colonies are lost.
+
+The correlation test suggested this is a moderate strength positive relationship, so the trends don’t match perfectly, but they seem closely related based on the data.
+
+We can’t definitively prove the mites directly caused the losses from this. But the significant correlation does suggest that these medical issues faced by bee colonies are linked to their survival rates.
+
+## Geographic Patterns
+For this analysis we need to load sf package, as we are going to make a choropleth map of the United State. We want to find how colony losses vary across the continental. We might see some region vary in shade compared to other places.
+
+```toml
+merged_data <- left_join(states_needed, colony, by = c("NAME" = "state"))
+
+ggplot(merged_data, aes(fill = colony_max)) +
+  geom_sf() +
+  coord_sf(xlim = c(-125, -65), ylim = c(25, 50))+
+  labs(title = "Colony Losses Across the US",
+       fill = "Colony Losses") +
+  scale_fill_viridis_c(option = 'mako') +  
+  theme_minimal()
+```
+![Formspree Logo](map.png)
+
+Based on the map data, there isn’t a strikingly significant difference in color indicating regional patterns of colony loss rates across the United States. However, certain states do stand out with higher losses, notably California, which recorded over estimated around 900,000 colony losses.
+
+California’s major agricultural industry likely explains its high colony losses. As the top producer of many bee-pollinated crops like almonds, declines in honey bee health could significantly impact crop pollination and food production there. California also has major commercial beekeeping operations that are affected by high mortality rates.
+
+According to an article by Aaron Smith, California produces about 80% of the world’s almonds in over 1 million acres of orchards. In February, 90% of all US honey bees are transported there to pollinate almond blooms. This reliance on imported bees, despite increasing almond acreage, may pressure honey bee health.
+
+States like Texas and Florida saw growth in colonies over the past five years. Texas has gained beekeeping popularity and implemented supportive regulations. Florida produced 8 million pounds of honey in 2021 from over 650,000 colonies( USDA 2022) However, its climate also aids bee pests and diseases that can raise colony los
+
+In summary, the enormous role of agriculture and bee-pollinated crops in states like California, Texas, and Florida make honey bee health especially important. Their large commercial operations and warmer climates also introduce stressors that can negatively impact colonies. Managing bee health in major farm states is key to supporting crop pollination and food supply nationwide.
+
+## Seasonal Analysis
 
  **It's a joy to use.**
 
-```toml
-# basic color options: use only color names as shown in the
-# "Color Palette" section of http://tachyons.io/docs/themes/skins/
-siteBgColor = "near-white"
-sidebarBgColor = "light-gray"
-headingColor = "black"
-textColor = "dark-gray"
-sidebarTextColor = "mid-gray"
-bodyLinkColor = "blue"
-navLinkColor = "near-black"
-sidebarLinkColor = "near-black"
-footerTextColor = "silver"
-buttonTextColor = "near-white"
-buttonBgColor = "black"
-buttonHoverTextColor = "white"
-buttonHoverBgColor = "blue"
-borderColor = "moon-gray"
-```
 
-### Dig Deeper
-
-Let's say you have a style guide to follow and `washed-blue` just won't cut the
-mustard. We built Blogophonic for you, too. There is a bypass of these
-predefined colors built in, you just need to dig a little deeper. In the theme
-assets, locate and open the main SCSS file (`/assets/main.scss`). After the
-crazy looking variables you probably don't recognize and directly following the
-Tachyons import (`@import 'tachyons';`) you'll see a comment that looks just
-like this:
-
-```scss
-// uncomment the import below to activate custom-colors
-// add your own colors at the top of the imported file
-// @import 'custom-colors';
-```
-
-Once you uncomment the `custom-colors` import, it will look like this:
-
-```scss
-// uncomment the import below to activate custom-colors
-// add your own colors at the top of the imported file
-@import "custom-colors";
-```
-
-Save that change, and now the color options in the `config.toml` are no longer
-active – they've been bypassed. To customize the colors, locate and open the
-`custom-colors` file found in the theme assets (`/assets/custom-colors.scss`).
-At the top of that file, you'll find a whole new set of variables for all the
-same color options, but this time you get to assign your own HEX codes.
-
-```scss
-// set your custom colors here
-$siteBgColorCustom: #e3e3da;
-$sidebarBgColorCustom: #dbdbd2;
-$textColorCustom: #666260;
-$sidebarTextColorCustom: #666260;
-$headingColorCustom: #103742;
-$bodyLinkColorCustom: #c4001a;
-$navLinkColorCustom: #c4001a;
-$sidebarLinkColorCustom: #c4001a;
-$footerTextColorCustom: #918f8d;
-$buttonTextColorCustom: #f7f7f4;
-$buttonHoverTextColorCustom: #f9f9f8;
-$buttonBgColorCustom: #103742;
-$buttonHoverBgColorCustom: #c4001a;
-$borderColorCustom: #c4beb9;
-```
