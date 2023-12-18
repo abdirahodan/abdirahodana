@@ -1,7 +1,6 @@
 ---
 title: "Lost Buzz: Tracking Trends and Factors in Bee Colony Losses"
 subtitle: "Raising awareness of threats facing honeybees and their indispensable pollination services through data-driven storytelling."
-date: 2020-08-11
 author: "Hodan Abdirahman"
 draft: false
 tags:
@@ -13,7 +12,9 @@ categories:
 # layout options: single or single-sidebar
 layout: single
 ---
-## Key Threats
+okay
+---
+### Key Threats
 
 As a child, I feared bees for their painful stings without appreciating their vital ecological role. While stings are unpleasant, bees only sting to defend themselves and their hive. In fact, bees are prolific pollinators sustaining diverse ecosystems and enabling successful food crop production that our agricultural system relies on.
 
@@ -30,7 +31,7 @@ stressor <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/t
 We will be implementing two various data sets.
 
 The Colony data set, focuses on quantifying bee colonies directly, provides colony count and change metrics by year, month and state. Overall captures trajectory of total bee colonies and population changes.
-```toml
+
 # A tibble: 1,222 × 10
     year months        state     colony_n colony_max colony_lost colony_lost_pct
    <dbl> <chr>         <chr>        <dbl>      <dbl>       <dbl>           <dbl>
@@ -47,9 +48,8 @@ The Colony data set, focuses on quantifying bee colonies directly, provides colo
 # ℹ 1,212 more rows
 # ℹ 3 more variables: colony_added <dbl>, colony_reno <dbl>,
 #   colony_reno_pct <dbl>
-```
 The stressor data set, focuses on external stress factors affecting be colonies -pesticides, diseases, climate etc. It links stressors to time frames and locations, as well as the impacts in percentage of colonies affect per quarter.
-```toml
+
 # A tibble: 7,332 × 5
     year months        state   stressor              stress_pct
    <dbl> <chr>         <chr>   <chr>                      <dbl>
@@ -64,7 +64,7 @@ The stressor data set, focuses on external stress factors affecting be colonies 
  9  2015 January-March Arizona Disesases                    0.1
 10  2015 January-March Arizona Pesticides                  NA  
 # ℹ 7,322 more rows
-```
+
 Im interested in understanding the changes in colony numbers over time in various US states. Let’s begin by examining data from six randomly selected states to gain a clearer perspective. To ensure diversity, I’ve chosen states from different regions.
 
 ```toml
@@ -78,49 +78,33 @@ ggplot(states_sample, aes(x = year, y = colony_n, color = months)) +
   x = "Year", y = "Colony Numbers") +
   theme_minimal()
 ```
-![Formspree Logo](timestate.png)
-
-
-Most states display a similar pattern of fluctuation in colony numbers across years and months. For example, Pennsylvanian and Vermont display peaks in between fall to winter and fall rather than summer. Meanwhile, California stands out for having a relatively stable colony count over time, without the seasonal highs and lows seen in other states. One commonality is that all states are missing data for April through June of 2018. This gap in the middle of the year makes it difficult to fully assess seasonal trends for that time period. Additional years of data could help determine if 2018 is an anomaly or if spring months regularly lack measurements.
-
-
-##Overall Trends
-
-This analysis looks at recent 5-year colony trends between 2015-2019 given the available data range. To prepare the data, I filtered the data set to only include complete years within this period for valid comparisons. Examining the states with extreme high or low net changes over this short time frame highlights rapidly improving or worsening areas that may warrant closer investigation.
-
-This is the five states with the biggest growth:
-![Formspree Logo](growth.png)
-
-This is the five states with the biggest decline:
-
-![Formspree Logo](decline.png)
-
-The slope charts reveal Texas as a dramatic positive outlier with a net growth of around 115,000 colonies, over double any other state. Florida, Michigan, Minnesota, and Wisconsin also saw substantial gains between 25,000 to 42,000. On the decline side, most states experienced gradual drops of -15,000 or less, but Ohio and Maryland saw steeper decreases nearing -50,000 colonies.
-
-Seeing states like Texas and Florida with large expansions could point to favorable climates, land availability, or agricultural practices supporting beekeeping. Meanwhile, the states with steep declines may reflect urbanization pressure, reduced foraging habitat, or climate stresses negatively impacting colonies. Comparing adjoining states in different directions could help identify regional factors that differentiate success and struggles.
-
-While these net changes highlight growth and declines, they do not account for proportional size differences among states. Larger states can have bigger swings in raw totals. Analyzing changes per existing colony or other metrics could improve normalization. Additionally, linking to stressor and land use data may reveal correlations to explore in future work.
-
-The stressor data set does not directly quantify climate change impacts, it does include variables like disease prevalence that can be linked to weather factors. For example, research shows Varroa mite infestations increase when temperatures rise but decline during heavy rains and high winds (Rowland, 2021).
-
-I want to explore the potential correlation between diseases affected by climate and colony loss rates. Specifically, we can use the data on Varroa mite effects as a proxy for temperature-sensitive diseases. If colonies affected by Varroa mites also exhibit higher loss percentages, it suggests a connection between increasing heat and colony collapses.
-
-Examining relationships between diseases like Varroa mites and colony losses can provide indirect insight into how climate shifts may be impacting bee populations. While not a perfect measure, analyzing these available variables can act as a starting point.
-
-```toml
-merged_data <- left_join(colony, stressor, by = c("year", "months", "state"))
-
-mites_data <- merged_data %>%
-  filter(stressor == "Varroa mites")
-
-correlation_result <- cor.test(mites_data$stress_pct, mites_data$colony_lost_pct)
-
-(correlation_result)
-```
-![Formspree Logo](stats.png)
-
-
  **It's a joy to use.**
+
+In using this theme for your next static website project, you won't need to know
+anything about Tachyons ... so, don't freak out. Even though I used it to style
+the theme, you won't need to change a thing. BUT, if you do want to play around
+with it, you can make massive changes very easily. Just familiarize yourself
+with the [clear documentation on the design system](http://tachyons.io/docs/).
+Once you dive in, you'll recognize all the classes I'm using in the markup.
+
+### BYOTachyons
+
+One of the best features of Tachyons is the exhaustive [component
+library](https://www.tachyonstemplates.com/components/?selectedKind=AboutPages&selectedStory=AboutUs&full=0&down=0&left=1&panelRight=0)
+contributed by the community. All those components are built to work with the
+Tachyons classes, so they will work in this theme too! You can copy/paste
+components in order to quickly block out a page, then fill in your content.
+
+### Taste the Rainbow
+
+We've leveraged the [accessible color
+combinations](http://tachyons.io/docs/themes/skins/) included with Tachyons to
+offer an easy way for you to setup your site using your favorite colors. In the
+site configuration file (`config.toml`), there is a full set of color parameters
+giving you control over the theme color scheme. For an option like `siteBgColor`
+for example, you can just type one of the predefined color names from Tachyons
+and save the file. You can totally customize the theme colors within minutes of
+installing the theme.
 
 ```toml
 # basic color options: use only color names as shown in the
