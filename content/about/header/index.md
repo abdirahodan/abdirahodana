@@ -7,5 +7,4 @@ headline: |
 ---
 
 <!-- this is a subheadline -->
-I’m a driven 20-something Somali-American, passionate about using data for positive change. My interests are in data science, economics, and public service. I’m looking for a career where I can use my data skills to improve public services. My goal is to make a difference in people’s lives through smart, data-driven decisions
-
+I am a Somali-American in my twenties, deeply passionate about data science and economics. My ambition is to apply these skills in the public sector. My goal is to drive impactful change in communities through strategic, data-informed decision-making in public policy.
