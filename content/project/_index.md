@@ -1,5 +1,5 @@
 ---
-title: Evolving Perspectives: A Portfolio of Data Discoveries
+title: "Evolving Perspectives: A Portfolio of Data Discoveries"
 description: "Home to a variety of projects, including personal initiatives as well as those completed for courses. The majority, if not all, are developed using R."
 author: "The R Markdown Team @RStudio"
 show_post_thumbnail: true
@@ -10,7 +10,7 @@ layout: list-grid # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
-  title: A Sidebar for Your Projects
+  title: "A Sidebar for Your Projects"
   description: |
     Projects can be anything!
     Check out the _index.md file in the /project folder 
@@ -27,7 +27,7 @@ cascade:
   show_disqus_comments: false # see disqusShortname in site config
   # for single-sidebar layout only
   sidebar:
-    text_link_label: View all projects
+    text_link_label: "View all projects"
     text_link_url: /project/
     show_sidebar_adunit: false # show ad container
 ---
