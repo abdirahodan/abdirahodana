@@ -1,7 +1,7 @@
 ---
 title: "Evolving Perspectives: A Portfolio of Data Discoveries"
 description: "Home to a variety of projects, including personal initiatives as well as those completed for courses. The majority, if not all, are developed using R."
-author: "The R Markdown Team @RStudio"
+author: "Hodan Abdirahman"
 show_post_thumbnail: true
 show_author_byline: true
 show_post_date: false
@@ -15,7 +15,7 @@ sidebar:
     Projects can be anything!
     Check out the _index.md file in the /project folder 
     to edit this content.
-  author: "The R Markdown Team @RStudio"
+  author: "Hodan Abdirahman"
   text_link_label: ""
   text_link_url: ""
   show_sidebar_adunit: false # show ad container
