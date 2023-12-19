@@ -1,6 +1,6 @@
 ---
 title: "Navigating the Maze of Cognitive Bias: Harnessing Awareness for Better Decision-Making"
-subtitle: ""
+subtitle: "In our everyday lives, we find ourselves making countless decisions, both big and small."
 date: 2022-05-25
 author: "Hodan Abdirahman"
 draft: false
