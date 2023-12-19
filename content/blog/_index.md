@@ -12,7 +12,7 @@ layout: list-sidebar # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
-  title: A Sidebar for Your Thoughts
+  title: Musing Corners
   description: |
     I chat about all things at the crossroads of economics      and data science - breaking down big ideas into      
     bite-sized, easy-to-digest pieces.

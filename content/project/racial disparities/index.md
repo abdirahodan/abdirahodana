@@ -16,9 +16,7 @@ In this project, we delve into the complex dynamics of student loan debt and its
 Throughout this analysis, we will leverage the capabilities of R to explore and visualize the data, aiming to uncover patterns and trends related to student loan debt among different racial groups.
 Since the dataset is quite small, it is simple to create a visualization that helps in better comprehending the information it contains.
 ### How does the average student loan debt vary across different races?
-
 ![Formspree Logo](pic1.png)
-
 Whites are relatively close to Blacks in terms of loan debt, as indicated by a comparable median and a similar spread of values. While there may be some overlap in loan debt levels between Blacks and Whites, the boxplot suggests that, on average, individuals in the Black race tend to have higher loan debt.
 These observations from the boxplot provide a comparative overview of the loan debt distribution across different races, highlighting the higher loan debt burden among Blacks, a relatively close but lower burden among Whites, and the lowest loan debt levels among Hispanics.
 
