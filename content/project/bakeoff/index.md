@@ -2,7 +2,7 @@
 title: "Tech Giants Tumble: Have these Tech Giants Reached Their Limit?"
 subtitle: "An R Package"
 excerpt: "Interestingly, mega-cap technology stocks were considered one of the most promising investments for stock investors in 2020 and 2021."
-date: 2019-09-05
+date: 2023-05-05
 author: "Hodan Abdirahman"
 draft: false
 tags:
@@ -97,7 +97,6 @@ I am curious about the connection between the opening and closing prices of diff
 Upon observation, there are distinct patterns evident in the data. For instance, in the month of March, we observe a decrease in prices for a few companies. In contrast, the subsequent year exhibits a slight increase. Notably, Adobe demonstrates a visible pattern of fluctuation, with alternating months of price increases and decreases.
 
 During the epidemic, consumer technology companies such as META might have observed an increase in their stock prices as a result of greater time spent at home and people’s boredom. Similarly, e-commerce companies like Amazon could have benefited from the growing preference for contactless and convenient deliveries. Did the epidemic influence the stock prices of major tech companies, based on their specific objectives? This can be examined by comparing the adjusted closing prices.
-
 ![Formspree Logo](stockprice.png)
 
 The graph illustrates a significant surge in META’s stock price during 2020, surpassing both Tesla and Amazon at one point. This rise can be attributed to increased user engagement, which can be explained by the fact that more people were staying at home and seeking connections with others through social media. It is reasonable to expect platforms like Facebook and Instagram to experience heightened user engagement.

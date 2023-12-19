@@ -8,12 +8,13 @@ show_audio_link: true
 audio_link_label: "How to say my name"
 link_list_label: "Interests" # bookmarks, elsewhere, etc.
 link_list:
-- name: Plant
-  url: https://en.wikipedia.org/wiki/Paris
-- name: Public Policy
-  url: https://en.wikipedia.org/wiki/Pastry
-- name: Social Justice
-  url: https://en.wikipedia.org/wiki/People
+- name: plants
+
+- name: jerky-style cubed meat <3
+  url: http://xawaash.com/?p=3824#sthash.P71gZfc2.dpbs
+  
+- name: poetry
+  
 ---
 
 ** index doesn't contain a body, just front matter above.
