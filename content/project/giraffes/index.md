@@ -1,16 +1,15 @@
 ---
 title: "Lost Buzz: Tracking Trends and Factors in Bee Colony Losses"
-subtitle: "Raising awareness of threats facing honeybees and their indispensable pollination services through data-driven storytelling."
-date: 2020-08-11
+excerpt: "Raising awareness of threats facing honeybees and their indispensable pollination services through data-driven storytelling."
+date: 2019-08-11
 author: "Hodan Abdirahman"
 draft: false
 tags:
   - hugo-site
 categories:
-  - Theme Features
+  - inequality
   - R
-  - package
-# layout options: single or single-sidebar
+  - social science
 layout: single
 ---
 ## Key Threats
