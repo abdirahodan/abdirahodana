@@ -1,9 +1,9 @@
 ---
-title: "Lorem Arrested Development"
-subtitle: "How to add panelsets in R Markdown posts."
+title: "Unleashing the Power of Data
+subtitle: "In today's data-driven world, data is a valuable resource that can provide valuable insights and drive informed decision-making. However, when data is misused, it can have far-reaching consequences that can affect individuals, organizations, and society. In this blog post, we will explore what misused data is, its relevance, and how to prevent it in the future."
 excerpt: "Add tabbed sections with code and results."
-date: 2021-05-24
-author: "Alison Hill"
+date: 2021-06-23
+author: "Hodan Abdirahman"
 draft: false
 # layout options: single, single-sidebar
 layout: single

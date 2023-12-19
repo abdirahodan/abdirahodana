@@ -30,12 +30,6 @@ Let’s start off by loading the data into R
 big_tech_stock_prices <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-02-07/big_tech_stock_prices.csv')
 big_tech_companies <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-02-07/big_tech_companies.csv')
 ```
-![Formspree Logo](formspree-logo.png)
-![Formspree Logo](formspree-logo.png)
-![Formspree Logo](formspree-logo.png)
-![Formspree Logo](formspree-logo.png)
-![Formspree Logo](formspree-logo.png)
-
 **Group 1: E-commerce and Consumer Tech**
 1. Amazon.com, Inc. (AMZN)
 2. Meta Platforms, Inc. (META)
