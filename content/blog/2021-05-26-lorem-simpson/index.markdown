@@ -1,9 +1,9 @@
 ---
-title: "Lorem Simpson"
+title: "Unleashing the Power of Data"
 subtitle: ""
-excerpt: "An .Rmarkdown post"
-date: 2021-05-26
-author: "Alison Hill"
+excerpt: "Relevance of Misused Data"
+date: 2022-08-27
+author: "Hodan Abdirahman"
 draft: false
 images:
 series:
