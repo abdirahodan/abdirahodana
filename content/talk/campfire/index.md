@@ -1,30 +1,25 @@
 ---
-title: "A campfire"
-subtitle: "Testing"
-excerpt: "Here is a talk I gave on making awesome personal websites using Hugo, blogdown, GitHub, and Netlify."
-date: 2021-01-12
-date_end: "2021-01-13"
+title: "Subway Lines and Social Divides: Analyzing Transit Disparities in NYC's Neighborhood"
+subtitle: "Undergraduate Research"
+excerpt: "This study delves into the disparities in public transportation access across New York City's neighborhoods, with a focus on subway transportation."
+date: 2023-20-11
 show_post_time: false
-event: "rstudio::global(2021)"
-event_url: https://global.rstudio.com
-author: "Alison Hill"
-location: "Sydney, Australia"
+author: "Hodan Abdirahman"
 draft: false
 # layout options: single, single-sidebar
 layout: single
-categories:
-- workshop
-links:
-- icon: door-open
-  icon_pack: fas
-  name: website
-  url: https://bakeoff.netlify.com/
-- icon: github
-  icon_pack: fab
-  name: code
-  url: https://github.com/apreshill/bakeoff
 ---
 
-{{< here >}}
+Subway Lines and Social Divides: Analyzing Transit Disparities in NYC's Neighborhood
+                              Hodan Abdirahman
+                  Shippensburg University of Pennsylvania
+                  
+                  
 
-I'm really excited to give this talk! Stay tuned for video and slides.
+                              **Abstract** 
+This study delves into the disparities in public transportation access across New York City's neighborhoods, with a focus on subway transportation. Analyzing data from Manhattan, the Bronx, Brooklyn, Queens, and Staten Island, the research employs a decision tree algorithm to assess the interplay of various factors – borough, race, car-free percentages, commute times, and median household incomes (both owned and rented properties). This methodological approach enables a nuanced understanding of how these variables collectively influence public transportation inequalities. Our findings reveal significant gaps in subway accessibility, particularly affecting lower-income and minority communities. In response, the study promotes a restorative approach to address issues of transportation justice. This includes implementing a dual strategy: an inter-neighborhood approach to lessen disparities across different neighborhoods, and an intra-neighborhood plan focused on narrowing the gaps within individual neighborhoods themselves. These recommendations are aimed at promoting transportation equity and ensuring a more inclusive urban mobility framework.
+
+_Keywords_: transportation equity, public transit, smart mobility, urban planning, social justice
+
+
+*If you would like to read more, send an email.*
