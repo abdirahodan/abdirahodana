@@ -21,7 +21,6 @@ Declining bee populations from pesticides, habitat loss, climate change, and dis
 My goal is to raise awareness of threats facing honeybees and their indispensable pollination services through data-driven storytelling.
 
 Let’s begin by uploading the data. The data particular comes from U.S Department of Agriculture, but tidytuesday github has made it easier to load and extract.
-
 ```toml
 colony <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-01-11/colony.csv')
 stressor <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-01-11/stressor.csv'

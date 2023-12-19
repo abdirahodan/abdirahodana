@@ -8,10 +8,11 @@ show_audio_link: true
 audio_link_label: "How to say my name"
 link_list_label: "Interests" # bookmarks, elsewhere, etc.
 link_list:
-- name: plants
 
 - name: jerky-style cubed meat <3
   url: http://xawaash.com/?p=3824#sthash.P71gZfc2.dpbs
+  
+- name: plants
   
 - name: poetry
   
