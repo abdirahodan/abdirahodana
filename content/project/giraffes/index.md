@@ -7,9 +7,9 @@ draft: false
 tags:
   - hugo-site
 categories:
-  - inequality
+  - environmental
   - R
-  - social science
+  - animals
 layout: single
 ---
 ## Key Threats

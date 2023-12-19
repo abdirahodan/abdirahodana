@@ -3,7 +3,7 @@ title: "Evolving Perspectives: A Portfolio of Data Discoveries"
 description: "Home to a variety of projects, including personal initiatives as well as those completed for courses. The majority, if not all, are developed using R."
 author: "Hodan Abdirahman"
 show_post_thumbnail: true
-show_author_byline: true
+show_author_byline: false
 show_post_date: false
 # for listing page layout
 layout: list-grid # list, list-sidebar, list-grid

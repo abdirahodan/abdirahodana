@@ -8,12 +8,15 @@ show_audio_link: true
 audio_link_label: "How to say my name"
 link_list_label: "Interests" # bookmarks, elsewhere, etc.
 link_list:
-- name: jerky-style beef cubes <3
-  url: http://xawaash.com/?p=3824#sthash.P71gZfc2.dlgxkm29.dpbs
 - name: plants
+  url: https://www.chooseyourplant.com/
 
-- name: People
- 
+- name: cats
+  url: https://cats.com/
+  
+- name: cooking favorite dishes
+  url: http://xawaash.com/?p=3824#sthash.P71gZfc2.dlgxkm29.dpbs
+  
 ---
 
 ** index doesn't contain a body, just front matter above.

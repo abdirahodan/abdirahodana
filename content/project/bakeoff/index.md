@@ -8,9 +8,8 @@ draft: false
 tags:
   - hugo-site
 categories:
-  - Theme Features
   - R
-  - package
+  - stocks
 layout: single
 ---
 For this project, I have chosen a data set on Big Tech stock prices that was published on February 7, 2023. The data set reveals a significant and sudden decrease in stock prices in 2022. Interestingly, mega-cap technology stocks were considered one of the most promising investments for stock investors in 2020 and 2021. This contrasting trend raises a compelling question: Have these tech giants reached their maximum potential?
