@@ -13,7 +13,6 @@ categories:
 layout: single
 ---
 ## Key Threats
-
 As a child, I feared bees for their painful stings without appreciating their vital ecological role. While stings are unpleasant, bees only sting to defend themselves and their hive. In fact, bees are prolific pollinators sustaining diverse ecosystems and enabling successful food crop production that our agricultural system relies on.
 
 Declining bee populations from pesticides, habitat loss, climate change, and disease is alarming. My wariness of stings now mixes with awe at bees’ resilience. Though stings briefly hurt, I accept the discomfort knowing it connects me to the expansive pollination systems bees make possible.
@@ -83,7 +82,6 @@ Most states display a similar pattern of fluctuation in colony numbers across ye
 
 
 ## Overall Trends
-
 This analysis looks at recent 5-year colony trends between 2015-2019 given the available data range. To prepare the data, I filtered the data set to only include complete years within this period for valid comparisons. Examining the states with extreme high or low net changes over this short time frame highlights rapidly improving or worsening areas that may warrant closer investigation.
 
 This is the five states with the biggest growth:
