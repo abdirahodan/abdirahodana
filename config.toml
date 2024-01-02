@@ -105,13 +105,8 @@ enableEmoji = true
   [[menu.header]]
     name = "Bytes & Insights"
     title = "Bytes & Insights"
-    url = "/Bytes & Insights/"
+    url = "/blog/"
     weight = 2
-  [[menu.header]]
-    name = "Projects"
-    title = "Project Portfolio"
-    url = "/project/"
-    weight = 3
   [[menu.header]]
     name = "Research"
     title = "Research"
