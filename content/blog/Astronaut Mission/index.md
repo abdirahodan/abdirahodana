@@ -9,43 +9,97 @@ draft: false
 tags:
   - hugo-site
 categories:
-  - inequality
+  - space
   - R
-  - social science
 layout: single
 ---
-In this project, we delve into the complex dynamics of student loan debt and its impact on different racial groups. Student loan debt has become a significant concern in today's society, affecting millions of individuals striving for higher education. However, it is crucial to recognize that the burden of student loans may not be evenly distributed among racial groups.
-Throughout this analysis, we will leverage the capabilities of R to explore and visualize the data, aiming to uncover patterns and trends related to student loan debt among different racial groups.
-Since the dataset is quite small, it is simple to create a visualization that helps in better comprehending the information it contains.
-### How does the average student loan debt vary across different races?
-![Formspree Logo](pic1.png)
-Whites are relatively close to Blacks in terms of loan debt, as indicated by a comparable median and a similar spread of values. While there may be some overlap in loan debt levels between Blacks and Whites, the boxplot suggests that, on average, individuals in the Black race tend to have higher loan debt.
-These observations from the boxplot provide a comparative overview of the loan debt distribution across different races, highlighting the higher loan debt burden among Blacks, a relatively close but lower burden among Whites, and the lowest loan debt levels among Hispanics.
+For this project I decided to use the Astronaut database. This data set comes from the tidytuesday github.
 
-### Are there differences in the loan debt distribution among races?
-![Formspree Logo](pic2.png)
+Let's begin by loading the needed packages, the data and cleaning it up as needed.
 
-In the Density Plot of Loan Debt By Race, it is observed that the density for Hispanics is relatively large compared to the other races, despite having the least loan debt. This can be attributed to the distribution of loan debt values for Hispanics, which might have a wider spread compared to other races.
-On the other hand, the densities for Blacks and Whites are somewhat similar, with the majority of the density appearing at higher loan debt values. However, there seems to be a higher concentration of loan debt values for Blacks compared to Whites, as indicated by the larger density in that region.
-These observations suggest that although Hispanics have the least loan debt, their loan debt values may vary significantly. Blacks and Whites, on the other hand, exhibit a more concentrated distribution of loan debt values, with Blacks showing a slightly higher prevalence at higher loan debt levels compared to Whites.
-Remember that these observations are based on the density plot, which provides insights into the distribution of loan debt values for each race.
+```toml
+# loading the packages
+library("tidymodels");theme_set(theme_bw())
+library(readr)
+library(dplyr) 
+library("GGally")
+library("olsrr")
+library("glmnet")
+library(tidyr)
+library(ggplot2)
+library(caret)
 
-### How does the loan debt burden differ by race and year?
+#loading the data
+astronauts <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-14/astronauts.csv')
+```
+As I delve into the data set, my focus is set on using the total number of missions as the dependent variable, with the other variables acting as predictors. Can we predict the total duration of all missions based on various factors, including the astronaut's nationality, the year of selection into the program, military or civilian status, the number of extravehicular activities, and the occupation of the astronaut ?
+
+I am interesting in understanding how the total duration of all missions ('total_hrs_sum') vary across different nationalities? We can do that by creating a bar plot, showing the distribution of total duration of all missions in hours for each nationality.
+
+```toml
+ggplot(astronauts, aes(x = total_hrs_sum, y = reorder(nationality, total_hrs_sum))) +
+  geom_bar(stat = "identity", fill = "#8B7355") +
+  labs(x = "Total Duration of Missions (hours)", y = "Nationality") +
+  theme_minimal()
+```
+![Formspree Logo](country.png)
+
+Based on the graph, it becomes evident that certain countries have notably higher total numbers of missions in comparison to others. This trend is particularly observable in several Western European countries, Russia, and the United States. These findings provide insight on potential discrepancies in space mission participation among different countries, emphasizing specific nations' dominance in the realm of space exploration.
+
+Another interesting variable to look at is whether there is a observable trend between the total duration of all missions and the year of selection into the program. This exploration seeks to determine whether there was a specific period characterized by increased frequency in space missions.
+![Formspree Logo](mission.png)
+
+
+Analyzing mission duration in relation to the year of selection rather than the year of mission provides insights into astronaut training and preparation processes, providing understanding of training program effectiveness, resource allocation, and the impact of technological advancements on mission duration.Notably, the line plot reveals a significant surge in mission duration between the years 1980 and 2000, with a visible increase in mission duration that occurred around the mid-1970s. This observation hints at a potential shift in space exploration dynamics during that period, indicating a possible increase in mission duration due to advancements in technology and space exploration capabilities.
+
+Exploring another intriguing relationship, I aim to investigate whether the distribution of total mission duration varies significantly between military and civilian astronauts.
+
+
+```toml
+duration_occ <- astronauts %>%
+  count(military_civilian)
+duration_occ
+
+ggplot(duration_occ, aes(x = military_civilian, y = n, fill = military_civilian)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("#CDB7B5", "#EEE8CD")) +
+  labs(x = "Military or Civilian", y = "Count") +
+  theme_minimal()
+```
+![Formspree Logo](occupation.png)
+
+The visualization aligns with my initial assumptions, indicating that a significant proportion of astronauts come from a military background. This observation isn't surprising, given the government oversight of space agencies like NASA. Moreover, the noticeable dominance of military-affiliated individuals in space missions reflects the historical reliance on government-funded space exploration endeavors. Additionally, the entry of private companies into the space domain in the 21st century further diversified the astronaut pool, leading to an increased presence of civilians in space missions.
+
+Extravehicular activity (EVA) is any activity done by an astronaut in outer space outside a spacecraft. Analyzing the relationship between the number of spacewalks (EVAs) performed during a mission and its overall duration can reveal important information about the effectiveness of resource management in space, the technical difficulties astronauts encounter during spacewalks, and the effects of these operations on astronaut safety and well-being. Knowing how these two factors interact can aid with mission planning, astronaut safety procedures, and ensuring mission success in space exploration.
+
+![Formspree Logo](EVA.png)
+
+The total duration of missions decreases as the instances of EVA missions increase, suggests a potential negative relationship between these two variables. This observation indicates that a higher number of EVA missions might be associated with shorter overall mission duration.
+
+Finally let's see how the number of missions changed over the years.This analysis seeks to ascertain the overall trend in the number of missions completed over time. It aims to identify any patterns or changes in the frequency of space missions over time, providing insights into the overall historical trajectory of space exploration and the frequency of space missions. By incorporating the astronauts' gender, it also aims to investigate any potential shifts in gender representation throughout the history of space exploration.
+
+![Formspree Logo](dura-mission.png)
+
+
+The graph effectively emphasizes the astronaut cohort's prevalent gender disparity, with male representation significantly outweighing female representation. When the duration of missions is examined, it becomes clear that some female astronauts have logged more than 15,000 hours, demonstrating their noteworthy contributions to space exploration.
+
+After the 1980s, a notable pattern develops, demonstrating a progressive increase in female participation in space missions. Furthermore, the graph demonstrates a significant overall increase in the number of missions, implying worldwide expansion and advancement of space exploration initiatives, stressing the continued push in the field of space research and travel.
+
+## Regression Analysis:
+
+### Multiple Linear Regression
+
+To better grasp how each variable affects the model's ability to predict and how they relate to the outcome, we should start by running a multiple linear regression (MLR). In multi linear regression, the goal is to predict a dependent variable based on several independent variables.
+
+Some variables in the columns are considered identity, have no variability, or are not relevant to the outcome of interest, so it is best to just remove them. This includes 'id,' 'number,' 'name,' and 'original_name'.
+
+```toml
+model <- lm(total_hrs_sum ~ sex + year_of_birth + nationality + military_civilian + selection + year_of_selection + occupation + year_of_mission + ascend_shuttle + in_orbit + descend_shuttle + field21 + eva_hrs_mission + total_eva_hrs, data=astronauts)
+
+summary(model)
+```
+
+Other variables I decided to remove includes the hours_mission, which is kinda similar to my dependent variable. In the first model we that year of birth and year of selection were not significant suggests that neither the astronaut's age at the time of the mission nor the year they were selected are strong predictors of the total duration of their missions.The variable for sex (male) was not a significant predictor, indicating no substantial difference in mission duration. On the contrary nationalities such as Australia and France are significant predictors of the total mission duration. The most unexpected was the variable indicating military or civilian status was not a significant predictor, with a p value of 0.066.
+
+Now, let's transform variables to achieve a better fit.
 ![Formspree Logo](pic3.png)
-
-The visualization suggests that Blacks are the most burdened by loan debt, followed by Whites, and then Hispanics.
-The line representing the loan debt burden for Blacks shows a semi-linear pattern with a steeper increase over time. This indicates that the debt burden for Blacks is growing at an exponential rate compared to other races, highlighting a concerning trend of increasing loan debt.
-For Hispanics exhibits a zigzag pattern, with alternating increases and decreases in consecutive years. This suggests that the loan debt burden for Hispanics fluctuates over time, potentially indicating variations in factors influencing debt accumulation
-The line representing the loan debt burden for Whites shows a relatively constant and increasing trend. This implies that the loan debt burden for Whites is steadily rising over the years, although at a comparatively slower rate than that of Blacks.
-The line seem to highlights the disproportionate burden faced by the black race, the fluctuating nature of loan debt for Hispanics, and the consistent but slower growth for Whites. These findings underscore the need for further investigation and targeted efforts to address the racial disparities in student loan debt.
-
-
-### Conclusion
-
-If we had access to more information about income and other details in the data, we could have discovered some important insights about student loan debt and racial groups. Here are the main findings we could have uncovered:
-Firstly, we could have calculated and compared the percentage of income that individuals from each racial group spend on repaying their student loan debt. This analysis would have shown us how much financial strain different racial groups experience and how much of their income goes towards paying off their loans.
-
-Secondly, by examining the loan debt-to-income ratio for each racial group, we could have identified any disparities in the level of debt relative to income. This ratio would have helped us understand whether certain groups are more burdened by student loan debt compared to others.
-Additionally, analyzing the variations in loan debt burden among racial groups based on educational attainment levels would have been valuable. We could have determined if there are differences in the level of student loan debt for individuals of different races, even after taking into account their educational achievements.
-
-These additional analyses would have provided a deeper understanding of the relationship between race, income, educational attainment, and the burden of student loan debt. This knowledge would be crucial in identifying disparities, developing targeted interventions, and advocating for policies that ensure equal access to education and reduce the financial challenges faced by specific racial groups.
