@@ -9,7 +9,6 @@ tags:
 categories:
   - crime
   - R
-  - social science
 layout: single
 ---
 
