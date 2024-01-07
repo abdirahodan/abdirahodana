@@ -1,7 +1,7 @@
 ---
 title: "Lost Buzz: Tracking Trends and Factors in Bee Colony Losses"
 excerpt: "Raising awareness of threats facing honeybees and their indispensable pollination services through data-driven storytelling."
-date: 2019-08-11
+date: 2023-08-11
 author: "Hodan Abdirahman"
 draft: false
 tags:
