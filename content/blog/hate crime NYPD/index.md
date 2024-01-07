@@ -64,8 +64,6 @@ data<-subset( data, select = -c(`Full Complaint ID`, `Arrest Date`) )
 
 Columns in this Data set
 
-Columns in this Data set
-
 ## Exploratory Data Analysis (EDA)
 
 In our analysis of New York City hate crimes, we shift our focus to whether an arrest was made, as indicated by NYPD records. This study aims to identify key factors influencing arrest outcomes in hate crime cases, such as the type of offense, location, time, and bias motivation. By exploring these elements, we intend to understand better how effectively and consistently hate crimes are addressed by law enforcement, providing insights for policy-making and resource allocation. This project seeks to answer: "Can we predict the likelihood of an arrest in hate crime incidents based on specific incident characteristics?
@@ -128,3 +126,142 @@ When it comes to the relationship between offense categories and legal classific
 **Misdemeanors**: *More serious than violations but less severe than felonies, misdemeanors can lead to up to a year in jail, fines, probation, or community service. Common examples include simple assault and DUI.*
 
 **Felonies:** *The most serious offenses, classified by severity from Class A (most serious) to Class E. They can be violent or non-violent and often result in significant prison time. A Class A felony, like first-degree murder, could lead to life imprisonment.*
+
+![Formspree Logo](heatmap.png)
+
+The heatmap shows that the legal system tends to categorize most offenses as felonies, especially those related to sexual orientation, religion, and race, highlighting an awareness of their seriousness. The dominance of felonies in the data points to the severe nature of hate crimes and suggests they can cause significant damage.
+
+The data also includes misdemeanors and violations, which covers a variety of actions that might be less serious. Notably, crimes based on gender don't follow the same felony-dominant pattern, which may indicate a different legal treatment or differences in reporting or the nature of these crimes.
+
+When it comes to `Arrest Id`, we see can assume that field is only populated when an arrest has been made, and the dataset documentation highlights it as "Identifier for arrest (if made)". However it is crucial to understand that this is an assumption. This leads us to our next question of What is the current state of arrest resolution for various hate crime incidents? How does the chance of arrest completion fluctuate among crime categories, and what does this reveal about law enforcement's response to varied bias motivations? This question aims to analyze the rate at which hate crimes lead to arrests, potentially revealing disparities in the law enforcement response to different types of hate crimes. I opted in dropping the age and disability as there was only one instance in the data.
+
+![Formspree Logo](arrest.png)
+
+Here we see distinct patterns in arrest outcomes for hate crimes, depending on the offense category and the severity of the charge. For ethnicity/national origin/ancestry-related offenses, there are more arrests for misdemeanors than felonies, but the number of arrests versus non-arrests is relatively balanced across both categories. Gender-related crimes also show a tendency for more arrests in misdemeanors compared to felonies, with arrests more likely than not in both categories.
+
+In contrast, race/color-related crimes have the highest counts, with a greater number of misdemeanor offenses not leading to arrest compared to those that do. However, there is a substantial number of felony arrests as well, suggesting a serious approach to more severe incidents. On the other hand, the number of non-arrests for religious practice-related felonies is notably high, which might indicate challenges in progressing these cases to an arrest, despite their seriousness.
+
+Crimes against sexual orientation show a higher arrest rate for felonies than for misdemeanors, although non-arrests are also significant in number for both categories. The presence of violations in the dataset is minimal compared to more severe charges, but they still result in arrests, indicating action is taken regardless of the offense's perceived severity.
+
+These figures suggest that while arrests are being made for hate crimes across various categories, the likelihood of an arrest being made can differ significantly depending on the nature of the offense and the legal classification it receives. The data highlights complexities in law enforcement responses to hate crimes and suggests that while some categories see strong action, others may not be addressed with the same level of consistency.
+
+Let's go more in depth and break breakdown NYPD's handling of offenses,we gain insight into which specific crimes are more likely to lead to an arrest. This data is critical for understanding the efficiency and focus of law enforcement's response to various crimes. The distinction between arrests made and not made across different PD code descriptions provides a clearer view of the system's priorities and challenges.
+
+Table: Description of the Offenses By Arrest Count
+
+| PD Code Description                                          | No Arrest | Arrest |
+|:-------------------------------------------------------------|----------:|-------:|
+| ASSAULT 3                                                    |       123 |    259 |
+| ASSAULT 2,1,UNCLASSIFIED                                     |        91 |    204 |
+| AGGRAVATED HARASSMENT 1                                      |       428 |    123 |
+| AGGRAVATED HARASSMENT 2                                      |       232 |    108 |
+| MENACING,UNCLASSIFIED                                        |        27 |     62 |
+| CRIMINAL MISCHIEF 4TH, GRAFFIT                               |       253 |     31 |
+| MISCHIEF,CRIMINAL, UNCL 2ND                                  |        30 |     31 |
+| ROBBERY,OPEN AREA UNCLASSIFIED                               |         7 |     21 |
+| CRIMINAL MISCHIEF,UNCLASSIFIED 4                             |        66 |     15 |
+| ROBBERY,PERSONAL ELECTRONIC DEVICE                           |         6 |     12 |
+| CRIMINAL MIS 2 & 3                                           |        35 |     10 |
+| LARCENY,GRAND FROM PERSON,UNCL                               |        17 |      7 |
+| OBSTR BREATH/CIRCUL                                          |         0 |      6 |
+| ROBBERY,POCKETBOOK/CARRIED BAG                               |         4 |      6 |
+| MISCHIEF, CRIMINAL 3 & 2, OF M                               |        13 |      5 |
+| MISCHIEF, CRIMINAL 4, BY FIRE                                |         5 |      5 |
+| ASSAULT POLICE/PEACE OFFICER                                 |         1 |      4 |
+| BURGLARY,UNCLASSIFIED,NIGHT                                  |         3 |      4 |
+| CHILD, ENDANGERING WELFARE                                   |         1 |      4 |
+| MANSLAUGHTER,UNCLASSIFIED - NO                               |         1 |      4 |
+| MENACING 1ST DEGREE (VICT NOT                                |         1 |      4 |
+| MISCHIEF, CRIMINAL 4, OF MOTOR                               |        13 |      4 |
+| ROBBERY,COMMERCIAL UNCLASSIFIED                              |         0 |      4 |
+| CRIMINAL CONTEMPT 1                                          |         0 |      3 |
+| HARASSMENT,SUBD 1,CIVILIAN                                   |         4 |      3 |
+| ROBBERY,PUBLIC PLACE INSIDE                                  |         0 |      3 |
+| STRANGULATION 1ST                                            |         1 |      3 |
+| WEAPONS POSSESSION 3                                         |         0 |      3 |
+| HARASSMENT,SUBD 3,4,5                                        |        11 |      2 |
+| LARCENY,GRAND FROM PERSON,PERSONAL ELECTRONIC DEVICE(SNATCH) |         2 |      2 |
+| MAKING TERRORISTIC THREAT                                    |        15 |      2 |
+| RECKLESS ENDANGERMENT 1                                      |         2 |      2 |
+| RECKLESS ENDANGERMENT 2                                      |         1 |      2 |
+| RESISTING ARREST                                             |         0 |      2 |
+| ROBBERY,BEGIN AS SHOPLIFTING                                 |         0 |      2 |
+| ROBBERY,DWELLING                                             |         0 |      2 |
+| SEXUAL ABUSE                                                 |         0 |      2 |
+| ARSON 2,3,4                                                  |         0 |      1 |
+| ASSAULT OTHER PUBLIC SERVICE EMPLOYEE                        |         0 |      1 |
+| BURGLARY,COMMERCIAL,DAY                                      |         0 |      1 |
+| CONTROLLED SUBSTANCE,POSSESS.                                |         0 |      1 |
+| CRIMINAL POSSESSION WEAPON                                   |         0 |      1 |
+| HOMICIDE,NEGLIGENT,UNCLASSIFIE                               |         1 |      1 |
+| IMPRISONMENT 1,UNLAWFUL                                      |         0 |      1 |
+| LARCENY,GRAND BY EXTORTION                                   |         0 |      1 |
+| LARCENY,GRAND BY THEFT OF CREDIT CARD                        |         0 |      1 |
+| LARCENY,GRAND FROM BUILDING (NON-RESIDENCE) UNATTENDED       |         0 |      1 |
+| LARCENY,GRAND FROM PERSON, BAG OPEN/DIP                      |         0 |      1 |
+| LARCENY,PETIT FROM BUILDING,UN                               |         4 |      1 |
+| LARCENY,PETIT FROM STORE-SHOPL                               |         0 |      1 |
+| MURDER,UNCLASSIFIED                                          |         0 |      1 |
+| RAPE 1                                                       |         0 |      1 |
+| ROBBERY,CAR JACKING                                          |         0 |      1 |
+| ROBBERY,CLOTHING                                             |         2 |      1 |
+| ROBBERY,RESIDENTIAL COMMON AREA                              |         0 |      1 |
+| SEXUAL ABUSE 3,2                                             |         1 |      1 |
+| TRESPASS 3, CRIMINAL                                         |         1 |      1 |
+| ARSON 1                                                      |         1 |      0 |
+| BURGLARY,RESIDENCE,UNKNOWN TIM                               |         1 |      0 |
+| BURGLARY,TRUCK NIGHT                                         |         1 |      0 |
+| FALSE REPORT 1,FIRE                                          |         1 |      0 |
+| FRAUD,UNCLASSIFIED-MISDEMEANOR                               |         1 |      0 |
+| INVESTIGATE CHILD ABUSE                                      |         1 |      0 |
+| LARCENY,GRAND FROM OPEN AREAS, UNATTENDED                    |         1 |      0 |
+| LARCENY,GRAND FROM RESIDENCE, UNATTENDED                     |         1 |      0 |
+| LARCENY,PETIT FROM BUILDING,UNATTENDED, PACKAGE THEFT INSIDE |         1 |      0 |
+| LARCENY,PETIT FROM OPEN AREAS,                               |         1 |      0 |
+| MENACING 1ST DEGREE (VICT PEAC                               |         1 |      0 |
+| MISCHIEF, CRIMINAL 3&2, BY FIR                               |         1 |      0 |
+| ROBBERY,NECKCHAIN/JEWELRY                                    |         3 |      0 |
+| UNCLASSIFIED COMPLAINT                                       |         1 |      0 |
+
+The table reveals several insights into the NYPD's handling of offenses. High arrest rates for crimes such as 'Aggravated Harassment 1' and 'Assault 3' suggest a strong response to violent and threatening behavior. However, a significant number of these incidents still do not result in arrest, potentially due to various factors such as the complexity of the case, lack of evidence, or victim cooperation issues.
+
+For offenses like 'Criminal Mischief 4th, Graffiti,' the number of non-arrests substantially outnumbers the arrests, indicating potential challenges in apprehending or prosecuting perpetrators of property crimes. Interestingly, 'Menacing, Unclassified' shows a more balanced approach between arrests and non-arrests, perhaps reflecting the varying degrees of severity and evidence available in these cases. Furthermore, for more severe crimes labeled as felonies, such as 'Robbery, Personal Electronic Device' and 'Mischief, Criminal, Unclassified 2nd,' the arrest counts are closely aligned with the number of non-arrests, suggesting that while these are high-priority offenses, they also present significant investigative or prosecutorial difficulties. In contrast, certain types of larceny, particularly 'Larceny, Grand from Building (Non-Residence) Unattended' and 'Larceny, Grand from Person, Personal Electronic Device (Snatch),' result in arrests more often than not, which could imply a higher success rate in resolving theft-related offenses. Overall, the data illustrates the NYPD's varied response to different crimes, with some offenses having a higher likelihood of arrest.
+
+#### Nature of Offenses
+
+Here we are looking at the bias, meaning the motivation behind these hate crimes. There is about 24 bias in the dataset, I resorted to only using the top 12, as some biases were more common than others.
+```toml
+top_biases <- data1 %>%
+  group_by(`Bias Motive Description`) %>%
+  summarise(Count = n()) %>%
+  top_n(12, Count) %>%
+  pull(`Bias Motive Description`) 
+
+filtered_data <- data1 %>%
+  filter(`Bias Motive Description` %in% top_biases) %>%
+  group_by(`Offense Category`, `Bias Motive Description`) %>%
+  summarise(Count = n()) %>%
+  arrange(`Offense Category`, desc(Count))
+
+ggplot(filtered_data, aes(x = `Offense Category`, y = Count, fill = `Bias Motive Description`)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  theme_bw()+
+  scale_fill_brewer(palette="Set3") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5)) +
+  labs(title = "Nature of Hate Crime Offenses for Top 12 Biases",
+       x = "Offense Category",
+       y = "Number of Incidents",
+       fill = "Bias Motive Description")
+```
+
+From the graph, we can discern that religiously motivated hate crimes are most frequently directed against individuals of the Jewish faith, as indicated by the substantial height of the bar in the 'Religion/Religious Practice' category. This prevalence suggests a concerning level of anti-Semitic sentiment, which may mirror persistent societal biases. In terms of race/color, anti-Asian biases appear to be the most prevalent, followed by anti-Black and anti-White biases, though to a lesser extent. This indicates that hate crimes based on race are primarily targeted towards the Asian community, highlighting the serious issue of racism that continues to affect this group disproportionately. When looking at offenses categorized under 'Sexual Orientation,' hate crimes against male homosexuals (gay) are the most common, followed by those against female homosexuals (lesbian), which can be seen as a reflection of homophobia in society. In the gender we see a conciderable amount for the trans. The graph also shows a notable number of incidents categorized as anti-Hispanic and anti-Muslim, suggesting that these groups are significant targets of hate crimes related to ethnicity/national, origin/ancestry and religion, respectively. This data reveals the specific prejudices these communities face.
+
+Now let's see the arrest for these bias, and try to draw further conclusions.
+
+![Formspree Logo](bias arrest.png)
+
+The bar plot provides a nuanced view of how arrest outcomes for hate crimes vary with respect to the reported bias motive. For certain biases, such as those against Asian, transgender, Hispanic, and white individuals, the number of arrests surpasses the number of incidents where no arrest was made. This could suggest that such incidents either have a higher rate of solvability, perhaps due to clearer evidence, more direct reporting, or greater law enforcement focus. It might also reflect societal and legal emphases on protecting these groups, potentially influenced by media attention or political priorities.
+
+Conversely, the plot reveals a different pattern for anti-black and anti-Jewish hate crimes, where incidents not leading to arrests are more common than those that do. This disparity may point to systemic issues within the investigative process or indicate challenges in securing sufficient evidence to lead to an arrest. There could also be sociopolitical factors at play that affect the law enforcement response to these incidents. For instance, historical and structural biases may impact how seriously these crimes are taken and how aggressively they are pursued by the authorities.
+
+## Modeling Techniques:
