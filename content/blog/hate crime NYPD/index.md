@@ -150,7 +150,7 @@ Let's go more in depth and break breakdown NYPD's handling of offenses,we gain i
 Table: Description of the Offenses By Arrest Count
 
 | PD Code Description                                          | No Arrest | Arrest |
-|:------------------------------------------|--------------:|--------------:|
+|:--------------------------------------|---------------:|---------------:|
 | ASSAULT 3                                                    |       123 |    259 |
 | ASSAULT 2,1,UNCLASSIFIED                                     |        91 |    204 |
 | AGGRAVATED HARASSMENT 1                                      |       428 |    123 |
@@ -255,6 +255,8 @@ ggplot(filtered_data, aes(x = `Offense Category`, y = Count, fill = `Bias Motive
        fill = "Bias Motive Description")
 ```
 
+![Formspree Logo](colorbias.png)
+
 From the graph, we can discern that religiously motivated hate crimes are most frequently directed against individuals of the Jewish faith, as indicated by the substantial height of the bar in the 'Religion/Religious Practice' category. This prevalence suggests a concerning level of anti-Semitic sentiment, which may mirror persistent societal biases. In terms of race/color, anti-Asian biases appear to be the most prevalent, followed by anti-Black and anti-White biases, though to a lesser extent. This indicates that hate crimes based on race are primarily targeted towards the Asian community, highlighting the serious issue of racism that continues to affect this group disproportionately. When looking at offenses categorized under 'Sexual Orientation,' hate crimes against male homosexuals (gay) are the most common, followed by those against female homosexuals (lesbian), which can be seen as a reflection of homophobia in society. In the gender we see a conciderable amount for the trans. The graph also shows a notable number of incidents categorized as anti-Hispanic and anti-Muslim, suggesting that these groups are significant targets of hate crimes related to ethnicity/national, origin/ancestry and religion, respectively. This data reveals the specific prejudices these communities face.
 
 Now let's see the arrest for these bias, and try to draw further conclusions.
@@ -332,11 +334,111 @@ model_cv <- train(
 model_cv
 ```
 
-`Generalized Linear Model`
+**Generalized Linear Model 1923 samples 6 predictor 2 classes: 'X0', 'X1' No pre-processing Resampling: Cross-Validated (10 fold) Summary of sample sizes: 1730, 1731, 1731, 1731, 1731, 1731, ...**
 
-`1923 samples 6 predictor 2 classes: 'X0', 'X1'`
+**Resampling results: ROC Sens Spec0.7409562 0.7699085 0.6089744**
 
-`No pre-processing Resampling: Cross-Validated (10 fold) Summary of sample sizes: 1730, 1731, 1731, 1731, 1731, 1731, … Resampling results:`
-
-`ROC Sens Spec0.7409562 0.7699085 0.6089744`
 The AUC of the ROC curve after cross-validation is 0.75, which is slightly lower than the AUC before cross-validation. This modest drop might be due to a variety of things. For example, the model may be highly tailored to the training data, resulting in poor performance on unknown data sets.Furthermore, the cross-validation procedure may reveal shortcomings in the model's capacity to generalize across diverse subsets of data, which is critical for assuring robust predictions.
+
+### Decision Tree
+
+The final model in our study is a decision tree, which sorts data using simple rules and is excellent for making sense of complex information. It's chosen for its ability to deal with different types of data and to show us the patterns in how hate crime arrests are made. We'll use all the relevant variables we have, leaving out only those we've already found to be unhelpful.
+``` toml
+(fit_m)
+n= 1923 
+
+node), split, n, loss, yval, (yprob)
+      * denotes terminal node
+
+ 1) root 1923 790 0 (0.5891836 0.4108164)  
+   2) Offense Description=ARSON,CRIMINAL MISCHIEF & RELATED OF,FRAUDS,GRAND LARCENY,HARRASSMENT 2,INVESTIGATIONS/COMPLAINTS ONLY,MISCELLANEOUS PENAL LAW,OFF. AGNST PUB ORD SENSBLTY &,PETIT LARCENY 1210 291 0 (0.7595041 0.2404959)  
+     4) Complaint Precinct Code=1,10,13,14,17,18,19,20,22,24,25,26,28,30,33,34,40,41,43,44,45,46,48,49,52,60,61,62,66,70,73,75,76,77,78,79,83,88,94,102,104,105,107,108,110,111,115,121,122,123 826 132 0 (0.8401937 0.1598063) *
+     5) Complaint Precinct Code=5,6,7,9,23,32,47,50,63,67,68,69,71,72,81,84,90,100,101,103,106,109,112,113,114,120 384 159 0 (0.5859375 0.4140625)  
+      10) Bias Motive Description=ANTI-BLACK,ANTI-BUDDHIST,ANTI-HINDU,ANTI-JEHOVAHS WITNESS,ANTI-JEWISH,ANTI-LGBT (MIXED GROUP),ANTI-MALE HOMOSEXUAL (GAY),ANTI-RELIGIOUS PRACTICE GENERALLY,ANTI-TRANSGENDER,ANTI-WHITE 305 104 0 (0.6590164 0.3409836) *
+      11) Bias Motive Description=ANTI-ASIAN,ANTI-CATHOLIC,ANTI-FEMALE HOMOSEXUAL (LESBIAN),ANTI-HISPANIC,ANTI-MULTI-RACIAL GROUPS,ANTI-MUSLIM,ANTI-OTHER ETHNICITY,ANTI-OTHER RELIGION 79  24 1 (0.3037975 0.6962025)  
+        22) Complaint Precinct Code=6,9,23,69,71,84,100,114,120 28  10 0 (0.6428571 0.3571429) *
+        23) Complaint Precinct Code=5,7,63,67,72,90,101,103,106,109,112 51   6 1 (0.1176471 0.8823529) *
+   3) Offense Description=ASSAULT 3 & RELATED OFFENSES,BURGLARY,CRIMINAL TRESPASS,DANGEROUS DRUGS,DANGEROUS WEAPONS,FELONY ASSAULT,HOMICIDE-NEGLIGENT,UNCLASSIFIE,KIDNAPPING & RELATED OFFENSES,MURDER & NON-NEGL. MANSLAUGHTE,OFFENSES AGAINST PUBLIC ADMINI,OFFENSES AGAINST THE PERSON,ROBBERY,SEX CRIMES 713 214 1 (0.3001403 0.6998597)  
+     6) Complaint Precinct Code=1,19,20,22,26,32,34,40,41,45,46,66,67,73,77,78,81,88,94,100,108,112 128  54 0 (0.5781250 0.4218750) *
+     7) Complaint Precinct Code=5,6,7,9,10,13,14,17,18,23,24,25,28,30,33,42,43,44,48,49,50,52,60,61,62,63,68,70,71,72,75,76,79,83,84,90,101,102,103,104,106,107,109,110,111,113,114,115,120,121,122 585 140 1 (0.2393162 0.7606838) *
+```
+
+The rationale behind using an unpruned decision tree was to determine which of the six selected variables ranked as most significant in predicting hate crime arrests. Upon examining the visual representation of the decision tree, it becomes clear that 'Offense Description' emerges as the most significant variable. This outcome aligns well with intuitive expectations, as different crimes are often prioritized based on factors such as the severity of the offense, the presence of witnesses, and the ease of prosecuting the suspect. For instance, crimes involving physical harm tend to be given higher priority.
+
+In our analysis of 1924 cases, the decision tree initially segregates cases based on the type of offense, indicating a stark difference in arrest likelihood between categories like burglary and fraud compared to more severe offenses like arson and assault. The tree further refines these categorizations by considering 'Complaint Precinct Code' and 'Bias Motive Description', highlighting that both the crime location and the nature of the bias involved are crucial in predicting arrest outcomes. For example, the likelihood of an arrest varies significantly with different combinations of precincts and bias motives. This in-depth perspective from the unpruned tree provides a thorough comprehension of the subtle patterns seen in the data, emphasizing the offense type's crucial role in influencing the likelihood of an arrest in hate crime instances.
+
+![Formspree Logo](tree.png)
+
+In the prune tree, at its root; the tree categorizes the incidents based on 'Offense Description'. One major division includes offenses like burglary, fraud, and grand larceny, where the likelihood of an arrest is lower ('0'). The other division comprises more severe offenses such as arson, assault, and dangerous drugs, which show a higher likelihood of leading to an arrest('1').
+
+Using the tidymodels library, I fine-tuned and evaluated a decision tree model for classification, optimizing its parameters through cross-validation to predict arrests in hate crime incidents accurately.
+```toml
+r_train$Arrest_Made <- as.factor(r_train$Arrest_Made)
+
+control <- trainControl(
+  method = "cv",
+  number = 10,
+  classProbs = TRUE,
+  summaryFunction = twoClassSummary
+)
+
+cv_samples <- vfold_cv(r_train, v = 10)  # Use the same number of folds as specified in trainControl
+
+dt_model <- decision_tree(mode = "classification", 
+                          cost_complexity = tune(), 
+                          tree_depth = tune()) %>% 
+  set_engine("rpart")
+
+dt_recipe <- recipe(Arrest_Made ~ `Complaint Year Number`+`Bias Motive Description`+`Month Number`+`Complaint Precinct Code`+`Law Code Category Description`+`Offense Description`, data = r_train)
+
+dt_wf <- workflow() %>% 
+  add_model(dt_model) %>% 
+  add_recipe(dt_recipe)
+
+# grid tunning
+tree_grid <- grid_regular(cost_complexity(),
+                          tree_depth(),
+                          levels = 10)
+
+# tune on the grid
+tree_res <- dt_wf %>% 
+  tune_grid(
+    resamples = cv_samples,
+    grid = tree_grid
+  )
+
+# find the best
+best_tree <- tree_res %>% 
+  select_best("accuracy")
+
+# final  workflow
+final_wf <- dt_wf %>% 
+  finalize_workflow(best_tree)
+
+# metrics 
+final_wf %>% 
+  last_fit(r_split,data = r_train) %>% 
+  collect_metrics()
+
+# predictions 
+preds <- final_wf %>% 
+  last_fit(r_split,data = r_train) %>% 
+  collect_predictions()
+```
+![Formspree Logo](predtree.png)
+
+The accuracy indicated that the model correctly predicted whether an arrest was made approximately 72% of the time. The ROC AUC was around 0.70 also suggesting a good ability to distinguish between the arrest made and no arrest made. It's not perfect, but it's considerably better than random guessing. It also seems to align with around the same amount as the other models.
+
+## **Results:**
+
+The EDA of NYPD hate crimes revealed key patterns. Peaks in crimes during months like February 2022 and May 2021 suggest possible seasonal or event-related influences. Hate crimes showed uneven geographical distribution, with Brooklyn North and Manhattan South reporting more race/color-related incidents, indicating local factors at play. Most offenses are felonies, particularly those based on sexual orientation, religion, and race, highlighting their severity. However, a concerning trend is the lower arrest rates for religious hate crimes, notably anti-Semitic incidents, which might indicate challenges in the justice system. The analysis also showed discrepancies in arrest outcomes based on bias motives, raising questions about systemic issues in law enforcement responses.
+
+In our study, we employed two modeling techniques - Multiple Logistic Regression, Linear and Decision Tree - each with six key variables to analyze hate crime arrests. Logistic Regression provided a strong starting point, showing an AUC of 0.824, which slightly decreased to 0.75 after cross-validation, indicating a solid but not infallible predictive ability.The Decision Tree, both in pruned forms, offered valuable insights with an accuracy of 72% and an AUC around 0.70, demonstrating good predictive capacity though slightly lower than the other models. Overall, the Logistic model proved to be the most robust in predicting hate crime arrests, showcasing the highest accuracy in our analysis.
+
+While the models like logistic regression and decision trees provided valuable insights, they have limitations. Overfitting might have occurred, where models performed well on training data but not as effectively on new, unseen data. Also, relying solely on AUC as a performance metric doesn't account for the different types of errors a model might make. Advanced techniques such as Random Forests or Gradient Boosting Trees could potentially yield better results, as they handle complex patterns more effectively and are generally more robust against overfitting. However, these sophisticated models often trade off interpretability for accuracy. Moreover, if our dataset was imbalanced, it could have led to biased results, favoring the majority class. Exploring these advanced models and addressing the mentioned limitations could enhance the accuracy and reliability of our findings in hate crime arrest predictions
+
+## **Conclusion:**
+
+Our analysis of the NYPD hate crimes dataset revealed noteworthy disparities in the occurrence of hate crimes and the subsequent law enforcement responses, including arrests, based on offense type and bias motivation. Through various modeling techniques, we identified key factors influencing arrest outcomes, such as the nature of the offense and the time of occurrence. Notably, violent crimes were more often associated with arrests compared to non-violent ones. Each model we employed, while offering distinct perspectives, collectively underscored the feasibility of predicting arrest likelihood in hate crime cases using specific incident characteristics.
+
+The cross-validation Even though none of the models had perfect AUC, they were all informative and showed reasonable predictive ability. This thorough research clarified the complex dynamics guiding hate crime instances and their legal resolutions, in addition to demonstrating the viability of utilizing data-driven algorithms for such predictions. Overall, this initiative improved our knowledge of the patterns of hate crimes and the critical factors influencing the likelihood of an arrest.
