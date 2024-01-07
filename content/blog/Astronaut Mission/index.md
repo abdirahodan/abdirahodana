@@ -102,4 +102,118 @@ summary(model)
 Other variables I decided to remove includes the hours_mission, which is kinda similar to my dependent variable. In the first model we that year of birth and year of selection were not significant suggests that neither the astronaut's age at the time of the mission nor the year they were selected are strong predictors of the total duration of their missions.The variable for sex (male) was not a significant predictor, indicating no substantial difference in mission duration. On the contrary nationalities such as Australia and France are significant predictors of the total mission duration. The most unexpected was the variable indicating military or civilian status was not a significant predictor, with a p value of 0.066.
 
 Now, let's transform variables to achieve a better fit.
-![Formspree Logo](pic3.png)
+```toml
+# first fit
+fit <- lm(total_hrs_sum ~ nationality + field21 + selection + occupation, astronauts)
+#summary(multi_fit)
+
+
+#creating a recipe 
+norm_recipe <- 
+    recipe(
+        total_hrs_sum ~ nationality  + selection + occupation, data= astronauts
+    ) %>%
+    step_other(nationality) %>% 
+    step_dummy(all_nominal()) %>%
+    step_center(all_predictors()) %>%
+    step_scale(all_predictors()) %>%
+    step_log(total_hrs_sum, base = 10) 
+
+norm_recipe <- prep(norm_recipe)
+prep_fit <- bake(norm_recipe, astronauts)
+
+multifit_preprocess <- lm(total_hrs_sum ~ ., data = prep_fit)
+#summary(multifit_preprocess)
+
+# assess assumptions
+par(mfrow = c(2,2))
+plot(multifit_preprocess)
+
+```
+![Formspree Logo](plot4.png)
+
+The Residuals vs Fitted plot indicates a lack of clear patterns, suggesting appropriate linearity, but the funnel shape points to heteroscedasticity. The Normal Q-Q plot reveals deviations from normality, especially in the tails. A few high-leverage points in the Residuals vs Leverage plot need investigation. Adjustments to the model, such as variable transformations or addressing influential points, may be necessary.
+
+### Ridge Regression
+
+When evaluating the data, multicollinearity is a possible issue. Ridge regression may be useful in addressing this issue. We can reduce the influence of multicollinearity and increase the accuracy of our investigation by using this regression technique.
+
+```toml
+y <- astronauts$total_hrs_sum
+
+#define matrix of predictor variables
+x <- model.matrix(~ nationality-1 + field21 + occupation - 1, astronauts)
+
+scale_n<-85
+
+lambdas <- 10^seq(-4, 4, length.out = scale_n)
+
+ridge_mod <- glmnet(x, y, alpha = 0, lambda = lambdas)
+coef(ridge_mod)[,1]
+
+#cross validation 
+cv_ridge_mode <- cv.glmnet(x, y, alpha = 0)
+top_lambda <- cv_ridge_mode$lambda.min
+
+
+coef(ridge_mod, s=top_lambda)
+```
+
+I decided to remove the selection predictor has it had a missing value. Nevertheless this regression model gives us a better understanding of our predictors! Here we see that nationality like the USSR/Russia have a large positive coefficient, suggesting a positive relationship with our response variable. Other nationalities like Denmark and Mongolia have the complete opposite, with a large negative coefficient. Field21 variable has a positive relationship also. And like before the occupation is a mix, when it comes to the association with the response.
+![Formspree Logo](ridge.png)
+
+
+The plot was difficult to understand because there were many nationalities clustered together. However, by filtering and including only the top variables with the lowest and highest values, the plot became much clearer and easier to interpret.
+
+### Elastic Net
+
+The Elastic Net model combines variable selection and regularization. It not only identifies the strongest positive and negative relationships with the response variable but also indicates which predictors may not be related by reducing their coefficients to zero. This is different from Ridge Regression, which doesn't perform variable selection and keeps all predictors while shrinking their coefficients to some extent.
+
+![Formspree Logo](elestic.png)
+
+Like the ridge regression, USSR/Russia still indicates the strongest positive relationship with the response variable. The nationality with the most negative coefficient is Denmark, with a coefficient of -2789.17. In this technique some of the coefficient are present as ".", which means their coefficients have been shrunk to zero; this includes Israel, Korea, Republic of South Africa,and Switzerland. Surprisingly the occupationFlight engineer has also has a zero coefficient.
+
+### Methods Compared
+
+To compare the different models, I'm focusing on an evaluation metric called RMSE. RMSE helps understand how accurately a model can predict the actual observations. The lower the RMSE value, the better the model's predictions align with the real data. By comparing the RMSE values of the models, we can determine which one performs closest to the actual observations.
+```toml
+set.seed(123)
+# 10-fold cross-validation
+train_control <- trainControl(method = "cv", number = 10, search = "grid")
+
+# tuning grid for ridge  and elastic net
+ridge_grid <- expand.grid(alpha = 0, lambda = 10^seq(-4, 1, length = 100))
+elastic_grid <- expand.grid(alpha = seq(0.1, 0.9, by = 0.2), lambda = 10^seq(-4, 1, length = 100))
+
+# mlr
+mlr_results <- train(x, y, method = "lm", trControl = train_control)
+
+# ridge regression
+ridge_results <- train(x, y, method = "glmnet", tuneGrid = ridge_grid, trControl = train_control)
+
+# elastic net
+elastic_results <- train(x, y, method = "glmnet", tuneGrid = elastic_grid, trControl = train_control)
+
+# Compare RMSE
+results <- data.frame(
+  mlr = min(mlr_results$results$RMSE),
+  ridge = min(ridge_results$results$RMSE),
+  elastic = min(elastic_results$results$RMSE)
+)
+
+results
+
+```
+![Formspree Logo](stats.png)
+
+The RMSE between each model does not have a striking difference. The elastic model has the lowest RMA among the three models, which means it strikes a good balance between bias and variance. This makes the elastic net model better at predicting new data.
+
+## Conclusions
+
+Certain variables, such as USSR/Russia, were strong predictors in our analysis. They were evident in our initial graph and were also important in both ridge and elastic regression models. However, some nationalities and occupations didn't contribute much to the predictions and had their coefficients reduced to zero in the Elastic Net model.
+
+One limitation was the potential overfitting in the MLR model, which was addressed by using regularization in Ridge and Elastic Net. To improve further, we could explore more diverse sets of predictors and fix missing values.
+
+The Elastic Net model's approach, which penalizes and selects variables, aligns well with the goal of identifying predictors associated with mission duration. This provides insights into the factors that influence mission length.
+
+Our iterative approach emphasized the importance of regularization, cross-validation, and understanding which variables closely predict mission duration. It revealed valuable insights into the key factors driving mission lengths.
