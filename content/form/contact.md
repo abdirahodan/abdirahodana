@@ -1,7 +1,7 @@
 ---
 title: Contact
 name: Contact Us Form
-description: "Thank you for the visit! If you have questions or would like to get in touch. Feel free to contact me"
+description: "I appreciate your visit to my site! Should you have any inquiries or wish to connect, please don't hesitate to reach out."
 date: 2019-02-25T13:38:41-06:00
 draft: false
 url: contact
