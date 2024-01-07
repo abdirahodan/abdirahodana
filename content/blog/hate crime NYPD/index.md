@@ -150,7 +150,7 @@ Let's go more in depth and break breakdown NYPD's handling of offenses,we gain i
 Table: Description of the Offenses By Arrest Count
 
 | PD Code Description                                          | No Arrest | Arrest |
-|:-------------------------------------------------------------|----------:|-------:|
+|:------------------------------------------|--------------:|--------------:|
 | ASSAULT 3                                                    |       123 |    259 |
 | ASSAULT 2,1,UNCLASSIFIED                                     |        91 |    204 |
 | AGGRAVATED HARASSMENT 1                                      |       428 |    123 |
@@ -230,7 +230,8 @@ For offenses like 'Criminal Mischief 4th, Graffiti,' the number of non-arrests s
 #### Nature of Offenses
 
 Here we are looking at the bias, meaning the motivation behind these hate crimes. There is about 24 bias in the dataset, I resorted to only using the top 12, as some biases were more common than others.
-```toml
+
+``` toml
 top_biases <- data1 %>%
   group_by(`Bias Motive Description`) %>%
   summarise(Count = n()) %>%
@@ -258,10 +259,84 @@ From the graph, we can discern that religiously motivated hate crimes are most f
 
 Now let's see the arrest for these bias, and try to draw further conclusions.
 
-![Formspree Logo](bias arrest.png)
+![Formspree Logo](biasarrest.png)
 
 The bar plot provides a nuanced view of how arrest outcomes for hate crimes vary with respect to the reported bias motive. For certain biases, such as those against Asian, transgender, Hispanic, and white individuals, the number of arrests surpasses the number of incidents where no arrest was made. This could suggest that such incidents either have a higher rate of solvability, perhaps due to clearer evidence, more direct reporting, or greater law enforcement focus. It might also reflect societal and legal emphases on protecting these groups, potentially influenced by media attention or political priorities.
 
 Conversely, the plot reveals a different pattern for anti-black and anti-Jewish hate crimes, where incidents not leading to arrests are more common than those that do. This disparity may point to systemic issues within the investigative process or indicate challenges in securing sufficient evidence to lead to an arrest. There could also be sociopolitical factors at play that affect the law enforcement response to these incidents. For instance, historical and structural biases may impact how seriously these crimes are taken and how aggressively they are pursued by the authorities.
 
 ## Modeling Techniques:
+
+### Logistic Regression
+
+I chose logistic regression for this dataset because it's well-suited for predicting the binary outcome of my 'Arrest_Made' variable. This model is ideal for exploring how different factors like 'Offense Category', 'Bias Motive Description', and 'Patrol Borough Name' influence the odds of an arrest in hate crime cases. Unlike linear regression, logistic regression works perfectly with categorical data, like my arrest outcomes, without any assumption violations. It allows me to include various predictors and comprehensively analyze law enforcement responses to hate crimes.
+
+``` toml
+# convert all other columns to factors
+model_data <- data1 %>%
+  mutate(Arrest_Made = factor(Arrest_Made, levels = c('No Arrest', 'Arrest'), labels = c(0, 1))) %>%
+  mutate(across(everything(), as.factor))
+#remove arrest id & recorded date
+model_data <- subset(model_data, select = -c(`Arrest Id`,`Record Create Date`))
+#split the data into a split into test and training
+set.seed(123)
+split <- initial_split(model_data , prop = .80)
+```
+
+To begin the modeling process, I used an all-inclusive approach, integrating all available variables from the dataset, with the exception of 'Arrest ID,' which was replaced by 'Arrest Made'. In addition, because the information already had the 'Complaint Year Number' and 'Month Number,' I elected to omit the 'Recorded Create Date' to prevent repetition. This deliberate exclusion aided in identifying the most important factors, positively and negatively impacting our model. This method eventually reduced the dataset to six important variables. Using these six variables, I created a model, the summary of which is shown below.
+
+``` toml
+set.seed(123)
+lg_train <- training(split)
+lg_test  <- testing(split)
+#remove Disability, only one occurrence 
+lg_train<- lg_train %>% 
+  filter(`Offense Category` != "Disability")
+
+lg_test<- lg_test %>% 
+  filter(`Offense Category` != "Disability")
+
+logistic <- glm(Arrest_Made ~ `Complaint Year Number`+`Bias Motive Description`+`Month Number`+`Complaint Precinct Code`+`Law Code Category Description`+`Offense Description`, data = lg_train, family = binomial())
+
+#summary(logistic)
+```
+
+In the summary, it was evident that among the six predictors, several specific variables stood out for their significance. For instance, in terms of positive influences, the 'Complaint Year Number' for the years 2020 through 2023 emerged as notably significant, suggesting a visible change in hate crime trends over these years. Similarly, the 'Month Number' for each month from February to December was identified as a crucial factor, indicating that the time of year plays a substantial role in the occurrence of hate crimes. The 'Complaint Precinct Code' also proved to be pivotal, with almost all precinct codes showing significant impact, thus highlighting the importance of location in predicting hate crimes. In addition, categories under 'Law Code Category Description', such as Investigation, Misdemeanor, and Violation, were found to be significant, underscoring the nature of the crime as a key predictor. The 'Offense Description', which includes varied offenses like assault, burglary, dangerous drugs, and weapons, pointed towards specific types of crimes that are more frequently associated with hate crimes. Furthermore, the 'Bias Motive Description' with different biases like anti-Asian, anti-Black, and anti-Buddhist was significant, reflecting the specific biases most associated with hate crimes.
+
+To assess the accuracy of our model's predictions, I've opted to use the ROC (Receiver Operating Characteristic) and AUC (Area Under the Curve), both standard metrics in classification model evaluation. The AUC, in particular, is crucial as it quantifies how well the model distinguishes between the different outcomes. It's a value that ranges from 0 to 1, where a score of 1 indicates flawless predictions, 0.5 implies performance no better than random chance, and 0 suggests entirely incorrect predictions.
+
+**![Formspree Logo](roc.png) \[1\] "AUC: 0.817009892994145"**
+
+Looking at the ROC, we observe a distinct curve that approaches the upper left corner of the plot. This is a good indicator since it shows that our model is capable of properly categorizing outcomes. The AUC value of 0.824 confirms this, indicating that our model has a significant capacity to distinguish between situations where an arrest was made and those where it was not. This higher AUC value indicates that our model is not only accurate in its predictions but also consistent in its ability to eliminate false positives and false negatives. It's especially crucial in our scenario of forecasting arrest results in hate crime occurrences, because the difference between correct and incorrect forecasts has serious consequences. The form of the ROC curve and the AUC score, when combined, offer us confidence in the model's prediction power and value in practical applications.
+
+Nevertheless, this initial assessment doesn't account for potential overfitting or other issues like data variance and model bias. To achieve a more accurate and generalization measure of our model's performance, I implemented a 10-fold cross-validation. This approach was consistently applied across all our models, setting the stage for a fair comparison later on.
+
+``` toml
+# check the levels of the outcome variable
+levels(lg_train$Arrest_Made)
+lg_train$Arrest_Made <- make.names(lg_train$Arrest_Made)
+
+# cross-validation with logistic regression
+control <- trainControl(method = "cv", number = 10, classProbs = TRUE, summaryFunction = twoClassSummary)
+
+set.seed(123) 
+model_cv <- train(
+  Arrest_Made ~ `Complaint Year Number`+`Bias Motive Description`+`Month Number`+`Complaint Precinct Code`+`Law Code Category Description`+`Offense Description`, 
+  data = lg_train, 
+  method = "glm", 
+  family = "binomial",
+  trControl = control,
+  metric = "ROC"
+)
+
+model_cv
+```
+
+`Generalized Linear Model`
+
+`1923 samples 6 predictor 2 classes: 'X0', 'X1'`
+
+`No pre-processing Resampling: Cross-Validated (10 fold) Summary of sample sizes: 1730, 1731, 1731, 1731, 1731, 1731, … Resampling results:`
+
+`ROC Sens Spec0.7409562 0.7699085 0.6089744`
+The AUC of the ROC curve after cross-validation is 0.75, which is slightly lower than the AUC before cross-validation. This modest drop might be due to a variety of things. For example, the model may be highly tailored to the training data, resulting in poor performance on unknown data sets.Furthermore, the cross-validation procedure may reveal shortcomings in the model's capacity to generalize across diverse subsets of data, which is critical for assuring robust predictions.
