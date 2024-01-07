@@ -1,7 +1,7 @@
 baseURL = "/"
 theme = "hugo-apero"
 languageCode = "en"
-title = "HA"
+title = "Abdirahman"
 author = "Hodan Abdirahman"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
@@ -43,7 +43,7 @@ enableEmoji = true
   # Place image file in `static` folder and specify image name here.
   sharing_image = "/img/papillons.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
-  twitter = "apreshill"
+  twitter = "abdirahodan"
   
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
@@ -89,7 +89,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "rss" # icon name without the 'fa-'
       icon_pack = "fas"
-      url       = "https://snazzy-sunflower-c3cea5.netlify.app/blog/"
+      url       = "https://abdirahodan.netlify.app/blog/"
 
 [taxonomies]
   category = "categories"
