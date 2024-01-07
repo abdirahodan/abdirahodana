@@ -1,7 +1,7 @@
 baseURL = "/"
 theme = "hugo-apero"
 languageCode = "en"
-title = "Personal website of Hodan Abdirahman"
+title = "HA"
 author = "Hodan Abdirahman"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
@@ -79,9 +79,9 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://www.linkedin.com/in/hodan-abdirahman-169a611aa/"
   [[params.social]]
-      icon      = "twitter" # icon name without the 'fa-'
+      icon      = "instagram" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://twitter.com/abdirahodan"
+      url       = "https://www.instagram.com/abdirahodan/"
   [[params.social]]
       icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "fab"
