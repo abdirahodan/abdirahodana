@@ -1,18 +1,17 @@
----
-title: Contact
-name: Contact Us Form
-description: "I appreciate your visit to my site! Should you have any inquiries or wish to connect, please don't hesitate to reach out."
-date: 2019-02-25T13:38:41-06:00
-draft: false
-url: contact
-type: form
-layout: split-left
-submit_button_label: Send Message
-show_social_links: true # specify social accounts in site config
-show_poweredby_formspree: true
-formspree_form_id: https://formspree.io/f/mnqeajno
-method:"POST"
----
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mnqeajno"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
-** Contact page don't contain a body, just the front matter above.
-See form.html in the layouts folder **
