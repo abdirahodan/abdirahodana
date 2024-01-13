@@ -1,6 +1,7 @@
 ---
 title: "NYPD Hate Crimes"
 excerpt: "Exploring hate crimes in cities is crucial for community well-being and safety, especially in a diverse setting like New York City."
+excerpt: "This project seeks to answer: "Can we predict the likelihood of an arrest in hate crime incidents based on specific incident characteristics?. It employs logistic regression and decision tree methods for this purpose."
 date: 2023-12-15
 author: "Hodan Abdirahman"
 draft: false
