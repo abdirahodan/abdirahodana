@@ -5,6 +5,7 @@ avatar_shape: square
 show_social_links: yes
 show_audio_link: yes
 audio_link_label: How to say my name
+audio_link_label: How to say my name
 link_list_label: Interests
 link_list:
 - name: plants
