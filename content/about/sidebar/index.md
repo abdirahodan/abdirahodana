@@ -4,7 +4,8 @@ role: Intern @ Schneider Electric
 avatar_shape: square
 show_social_links: yes
 show_audio_link: yes
-audio_link_label: how to pronounce my name: hold-on ab-di-rah-man
+audio_link_label: How to say my name
+description: hold-on ab-di-rah-man
 link_list_label: Interests
 link_list:
 - name: plants
