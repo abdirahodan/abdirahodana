@@ -3,9 +3,9 @@ author: "Hodan Abdirahman"
 role: Intern @ Schneider Electric
 avatar_shape: round
 show_social_links: yes
-show_audio_link: no
+show_audio_link: yes
 audio_link_label: How to say my name
-audio_link_label: hold-on ab-di-rah-man
+audio_link_label2: hold-on ab-di-rah-man
 link_list_label: Interests
 link_list:
 - name: plants
