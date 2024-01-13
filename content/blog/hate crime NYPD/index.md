@@ -1,17 +1,14 @@
 ---
 title: "NYPD Hate Crimes"
-excerpt: "This project seeks to answer: "Can we predict the likelihood of an arrest in hate crime incidents based on specific incident characteristics?. It employs logistic regression and decision tree methods for this purpose."
+excerpt: "Exploring hate crimes in cities is crucial for community well-being and safety, especially in a diverse setting like New York City."
 date: 2023-12-15
 author: "Hodan Abdirahman"
 draft: false
-tags:
-  - hugo-site
 categories:
   - crime
   - R
 layout: single
 ---
-
 ## Introduction
 
 Exploring hate crimes in cities is crucial for community well-being and safety, especially in a diverse setting like New York City. The NYPD Hate Crimes dataset offers an in-depth look at these incidents in one of the world's most populous cities, capturing a variety of reported cases. This analysis is essential as hate crimes deeply affect community trust and target individuals based on immutable traits like race, religion, or sexuality. The shared goal of community leaders, policymakers, and law enforcement is to understand and address these crimes effectively.
