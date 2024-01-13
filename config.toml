@@ -79,10 +79,6 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://www.linkedin.com/in/hodan-abdirahman-169a611aa/"
   [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.instagram.com/abdirahodan/"
-  [[params.social]]
       icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://orcid.org/0009-0000-4597-9150"

@@ -1,10 +1,11 @@
 ---
 author: "Hodan Abdirahman"
 role: Intern @ Schneider Electric
-avatar_shape: square
+avatar_shape: round
 show_social_links: yes
-show_audio_link: yes
+show_audio_link: no
 audio_link_label: How to say my name
+audio_link_label: hold-on ab-di-rah-man
 link_list_label: Interests
 link_list:
 - name: plants
@@ -15,5 +16,4 @@ link_list:
   url: http://xawaash.com/?p=3824#sthash.P71gZfc2.dlgxkm29.dpbs
 ---
 
-** index doesn't contain a body, just front matter above.
-See about/list.html in the layouts folder **
+\*\* index doesn't contain a body, just front matter above. See about/list.html in the layouts folder \*\*
