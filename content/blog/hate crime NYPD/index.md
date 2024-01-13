@@ -9,7 +9,6 @@ tags:
 categories:
   - crime
   - R
-  -machine learning
 layout: single
 ---
 
