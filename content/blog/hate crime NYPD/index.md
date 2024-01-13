@@ -5,7 +5,6 @@ date: 2023-12-15
 author: "Hodan Abdirahman"
 draft: false
 categories:
-  - model tech
   - crime
   - R
 layout: single
