@@ -1,6 +1,6 @@
 ---
 title: "Hodan Abdirahman"
-subtitle: "Inspiring Data Consultant"
+subtitle: "Economic Data Enthusiast"
 description: "i like making charts pretty."
 date: 2019-02-18T12:27:33-06:00
 images:
