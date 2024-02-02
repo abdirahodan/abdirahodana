@@ -83,9 +83,9 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://orcid.org/0009-0000-4597-9150"
   [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
+      icon      = "salesforce" # icon name without the 'fa-'
       icon_pack = "fas"
-      url       = "https://abdirahodan.netlify.app/blog/"
+      url       = "https://public.tableau.com/app/profile/abdirahodan/vizzes"
 
 [taxonomies]
   category = "categories"
