@@ -84,9 +84,9 @@ enableEmoji = true
       url       = "https://orcid.org/0009-0000-4597-9150"
   [[params.social]]
       icon      = "salesforce" # icon name without the 'fa-'
-      icon_pack = "fas"
+      icon_pack = "fab"
       url       = "https://public.tableau.com/app/profile/abdirahodan/vizzes"
-
+      
 [taxonomies]
   category = "categories"
   series = "series"
