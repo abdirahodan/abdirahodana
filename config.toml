@@ -83,14 +83,14 @@ enableEmoji = true
       icon_pack = "fas"
       url       = "https://abdirahodan.netlify.app/blog/"
   [[params.social]]
+      icon      = "envelope" # icon name without the 'fa-'
+      icon_pack = "fas"
+      url       = "https://abdirahodan.netlify.app/contact/"
+  [[params.social]]
       icon      = "salesforce" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://public.tableau.com/app/profile/abdirahodan/vizzes"
-  [[params.social]]
-      icon      = "envelope" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://abdirahodan.netlify.app/contact/"
-    
+
 [taxonomies]
   category = "categories"
   series = "series"
