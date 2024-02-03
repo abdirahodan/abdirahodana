@@ -12,7 +12,7 @@ link_list:
 - name: cats
   url: https://cats.com/
 - name: cooking favorite dishes
-  url: http://xawaash.com/?p=3824#sthash.P71gZfc2.dlgxkm29.dpbs
+  url:
 ---
 
 \*\* index doesn't contain a body, just front matter above. See about/list.html in the layouts folder \*\*
