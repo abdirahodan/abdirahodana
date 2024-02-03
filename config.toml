@@ -79,14 +79,18 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://www.linkedin.com/in/hodan-abdirahman-169a611aa/"
   [[params.social]]
-      icon      = "orcid" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://orcid.org/0009-0000-4597-9150"
+      icon      = "rss" # icon name without the 'fa-'
+      icon_pack = "fas"
+      url       = "https://abdirahodan.netlify.app/blog/"
   [[params.social]]
       icon      = "salesforce" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://public.tableau.com/app/profile/abdirahodan/vizzes"
-      
+  [[params.social]]
+      icon      = "envelope" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://abdirahodan.netlify.app/contact/"
+    
 [taxonomies]
   category = "categories"
   series = "series"
