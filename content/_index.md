@@ -1,7 +1,7 @@
 ---
 title: "Hodan Abdirahman"
 subtitle: "Data Analyst"
-description: "I believe in the power of economic principles and data analytics to forge a path towards a sustainable future — a future where every individual has access to a cleaner, healthier environment. "
+description: ""
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/frontpage.png
