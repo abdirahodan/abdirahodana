@@ -1,7 +1,7 @@
 ---
 author: "Hodan Abdirahman"
 role: Intern @ Schneider Electric
-avatar_shape: square
+avatar_shape: round
 show_social_links: yes
 show_audio_link: no
 audio_link_label:
