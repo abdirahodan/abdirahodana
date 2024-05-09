@@ -6,7 +6,7 @@ use_featured: false # if false, use most recent by date
 number_categories: 0 # set to zero to exclude
 show_intro: true
 intro: |
-  I'm excited to announce that I will be participating in the upcoming Eastern Economic Conference in Boston. This is a wonderful opportunity for me to engage with fellow economics enthusiasts and share insights from my undergraduate research.
+  yay
   
 show_outro: false
 outro: |
