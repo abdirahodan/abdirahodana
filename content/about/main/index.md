@@ -3,7 +3,7 @@
 title: "What I'm up to lately" # leave blank to exclude
 number_featured: 1 # pulling from mainSections in config.toml
 number_categories: 3 # set to zero to exclude
-show_intro: false
+show_intro: true
 intro: |
   I'm excited to announce that I will be participating in the upcoming Eastern Economic Conference in Boston. This is a wonderful opportunity for me to engage with fellow economics enthusiasts and share insights from my undergraduate research.
   
