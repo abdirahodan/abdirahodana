@@ -21,7 +21,7 @@ img.two {
 <body>
 
 
-<img class="two" src="/img/frontpage.png" alt="drawing"/>
+<img class="two" src="/img/0.53.png" alt="drawing"/>
 
 **Long bio:**
 
