@@ -47,9 +47,11 @@ number_categories: 0 # set to zero to exclude
 
 <div class="text-container">
   <strong>About Me:</strong>
-  <p>Long bio</p>
-  <strong>Interests:</strong>
-  <p>Short bio</p>
+  <p>
+    As an Economics major with a specialization in Data Science, I am passionate about using data analytics to foster advancements in energy and environmental sustainability, with a keen focus on promoting social justice. My ambition is to harness data to drive significant improvements in the energy sector, emphasizing renewable resources, while ensuring equitable access to basic needs and public services.
+  </p>
+  <strong>Interests/ Ambitions</strong>
+  <p> When I invision my career in future, I hope to work in the public sector, where I will have the chance to use data and serve underprivileged community in relation to energy and enviromental policies. </p>
 </div>
 
 </body>
