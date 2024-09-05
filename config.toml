@@ -77,7 +77,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "www.linkedin.com/in/abdirahodan"
+      url       = "https://www.linkedin.com/in/abdirahodan/"
   [[params.social]]
       icon      = "rss" # icon name without the 'fa-'
       icon_pack = "fas"
