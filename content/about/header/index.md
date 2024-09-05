@@ -9,16 +9,8 @@ number_categories: 0 # set to zero to exclude
 <meta charset="UTF-8">
 <title>About Page</title>
 <style>
-  .container {
-    display: flex; /* Enables Flexbox */
-    align-items: center; /* Centers items vertically */
-    justify-content: center; /* Centers items horizontally */
-    height: 100vh; /* Full height of the viewport */
-  }
-
   .image-container {
-    flex: 1; /* Takes up 1 part of the container */
-    text-align: center; /* Centers the image inside the container */
+    text-align: center; /* Centers the image */
   }
 
   img.two {
@@ -26,12 +18,13 @@ number_categories: 0 # set to zero to exclude
     width: 80%;
     border-radius: 50%;
     max-width: 300px; /* Limits image width */
+    display: block; /* Ensures the image is a block element */
+    margin: auto; /* Centers the image horizontally */
   }
 
   .text-container {
-    flex: 2; /* Takes up 2 parts of the container */
     padding: 20px; /* Adds spacing around text */
-    margin-left: 40px; /* Adds space between the image and the text */
+    text-align: center; /* Centers the text */
   }
 
   .text-container strong {
@@ -48,17 +41,17 @@ number_categories: 0 # set to zero to exclude
 </head>
 <body>
 
-<div class="container">
-  <div class="image-container">
-    <img class="two" src="/img/me.png" alt="drawing"/>
-  </div>
-  <div class="text-container">
-    <strong>About Me:</strong>
-    <p>Long bio</p>
-    <strong>Interests:</strong>
-    <p>Short bio</p>
-  </div>
+<div class="image-container">
+  <img class="two" src="/img/0.53.png" alt="drawing"/>
+</div>
+
+<div class="text-container">
+  <strong>About Me:</strong>
+  <p>Long bio</p>
+  <strong>Interests:</strong>
+  <p>Short bio</p>
 </div>
 
 </body>
 </html>
+
