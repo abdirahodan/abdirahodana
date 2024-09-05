@@ -13,14 +13,13 @@ number_categories: 0 # set to zero to exclude
     text-align: center; /* Centers the image */
   }
 
-  img.two {
-    height: 80%;
-    width: 80%;
-    border-radius: 50%;
-    max-width: 300px; /* Limits image width */
-    display: block; /* Ensures the image is a block element */
-    margin: auto; /* Centers the image horizontally */
-  }
+img.two {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;  /* Makes the image round */
+  display: block;      /* Centers the image horizontally */
+  margin: auto;        /* Centers the image horizontally */
+}
 
   .text-container {
     padding: 20px; /* Adds spacing around text */
