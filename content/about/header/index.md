@@ -31,6 +31,7 @@ number_categories: 0 # set to zero to exclude
   .text-container {
     flex: 2; /* Takes up 2 parts of the container */
     padding: 20px; /* Adds spacing around text */
+    margin-left: 40px; /* Adds space between the image and the text */
   }
 </style>
 </head>
@@ -42,13 +43,11 @@ number_categories: 0 # set to zero to exclude
   </div>
   <div class="text-container">
     <strong>About Me:</strong>
-    <p>long bio</p>
-    <strong>Interests</strong>
-    <p>short bio</p>
+    <p>Long bio</p>
+    <strong>Interests:</strong>
+    <p>Short bio</p>
   </div>
 </div>
 
 </body>
 </html>
-
-
