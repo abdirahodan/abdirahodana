@@ -5,6 +5,11 @@ number_featured: 1 # pulling from mainSections in config.toml
 use_featured: false # if false, use most recent by date
 number_categories: 3 # set to zero to exclude
 ---
+images:
+  - img/frontpage.png
+image_left: false
+text_align_left: true
+
 
 <style>
 img.two {
@@ -16,7 +21,7 @@ img.two {
 <body>
 
 
-<img class="two" src="/img/frontpage.jpg" alt="drawing"/>
+<img class="two" src="/img/frontpage.png" alt="drawing"/>
 
 **Long bio:**
 
