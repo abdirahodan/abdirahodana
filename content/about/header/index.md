@@ -33,6 +33,17 @@ number_categories: 0 # set to zero to exclude
     padding: 20px; /* Adds spacing around text */
     margin-left: 40px; /* Adds space between the image and the text */
   }
+
+  .text-container strong {
+    display: block; /* Makes the headers block elements */
+    margin-bottom: 10px; /* Adds space below the headers */
+  }
+
+  .text-container p {
+    margin-top: 0;  /* Removes space at the top of paragraphs */
+    margin-bottom: 20px; /* Adds space below each paragraph */
+  }
+
 </style>
 </head>
 <body>
