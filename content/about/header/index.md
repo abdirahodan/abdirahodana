@@ -3,6 +3,15 @@
 title: "About Hodan Abdirahman" # leave blank to exclude
 number_categories: 0 # set to zero to exclude
 ---
+img.two {
+  width: 200px; /* Set both width and height to the same value */
+  height: 200px; /* This will ensure the image is square */
+  border-radius: 50%; /* This will make the square image appear as a circle */
+  display: block; /* Ensures the image is a block element */
+  margin-right: 20px; /* Adds space between the image and the text */
+  object-fit: cover; /* Ensures the image covers the area without distorting */
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +26,12 @@ number_categories: 0 # set to zero to exclude
   }
 
   img.two {
-    height: 80%;
-    width: 80%;
+    width: 200px; /* Ensures the image is a square */
+    height: 200px; /* Ensures the image is a square */
     border-radius: 50%; /* Makes the image round */
-    max-width: 300px; /* Restricts the maximum width to prevent oversized images */
     display: block; /* Ensures the image is a block element */
     margin-right: 20px; /* Adds space between the image and the text */
+    object-fit: cover; /* Ensures the image covers the square area without distorting */
   }
 
   .text-container {
@@ -30,7 +39,6 @@ number_categories: 0 # set to zero to exclude
     text-align: left; /* Aligns the text to the left */
   }
   
-  /* Styling Markdown-like strong and paragraphs */
   strong {
     display: block; /* Treats the header-like elements as block for better control */
     font-size: 1.5em; /* Larger text for headers */
