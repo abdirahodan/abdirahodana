@@ -42,7 +42,7 @@ number_categories: 0 # set to zero to exclude
 <body>
 
 <div class="image-container">
-  <img class="two" src="/img/0.53.png" alt="drawing"/>
+  <img class="two" src="/img/me.png" alt="drawing"/>
 </div>
 
 <div class="text-container">
