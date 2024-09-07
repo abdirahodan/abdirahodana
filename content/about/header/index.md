@@ -86,3 +86,4 @@ number_categories: 0 # set to zero to exclude
 	<span class="nav-title" style="color: #c2a3e0;">Data Analysis - Visualization - Storytelling | R | Statistical Analysis</span>
           </a>    
     </div>
+</html>
