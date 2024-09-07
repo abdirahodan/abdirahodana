@@ -101,12 +101,12 @@ enableEmoji = true
     name = "About"
     title = "About Me"
     url = "/about/"
-    weight = 1
+    weight = 4
   [[menu.header]]
     name = "Bytes & Insights"
     title = "Bytes & Insights"
     url = "/blog/"
-    weight = 2
+    weight = 1
   [[menu.header]]
     name = "Research"
     title = "Research"
@@ -116,7 +116,7 @@ enableEmoji = true
     name = "Her Equation"
     title = "Her Equation"
     url = "/blog/spoonful-series/"
-    weight = 3
+    weight = 2
     
   # Configure footer  
   [[menu.footer]]
