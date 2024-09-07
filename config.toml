@@ -115,7 +115,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Her Equation"
     title = "Her Equation"
-    url = "/spoonful-series/"
+    url = "/blog/spoonful-series/"
     weight = 3
     
   # Configure footer  
