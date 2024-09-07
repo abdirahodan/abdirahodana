@@ -1,19 +1,11 @@
 ---
-title: "A third post"
-weight: 3
+title: "Introduction"
+weight: 1
 subtitle: ""
-excerpt: "Grid is the very first CSS module created specifically to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making websites."
-date: 2021-01-03
-draft: false
+excerpt: "What does gender equality mean to me"
+date: 2024-09-07
+draft: true
 ---
 
-{{< here >}}
 
-
-## this one is correct?
-
-### does this work?
-
----
-
-## final stretch!
+Coming soon...
