@@ -1,8 +1,8 @@
 ---
-title:Her Equation
+title: A Spoonful of Hugo
 description: |
   A forking fun new feature for series.
-author: Hodan Abdirahman
+author: Alison Hill
 show_post_thumbnail: true
 show_author_byline: true
 show_post_date: true
@@ -11,7 +11,7 @@ layout: list-sidebar # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
-  title:Her Equation
+  title: A Spoonful of Hugo
   author: Hodan Abdirahman
   description: |
     A forking fun new feature for series.
@@ -26,8 +26,8 @@ sidebar:
 # set up common front matter for all individual pages in series
 cascade:
   layout: single-series       # for a series, do not change
-  series:Her Equation  # name your series
-  author: Hodan Abdirahman
+  series: A Spoonful of Hugo  # name your series
+  author: Alison Hill
   show_author_byline: true
   show_post_date: true
   sidebar:
