@@ -111,7 +111,12 @@ enableEmoji = true
     name = "Research"
     title = "Research"
     url = "/talk/"
-    weight = 4
+    weight = 3
+  [[menu.header]]
+    name = "Her Equation"
+    title = "Her Equation"
+    url = "/spoonful-series/"
+    weight = 3
     
   # Configure footer  
   [[menu.footer]]
