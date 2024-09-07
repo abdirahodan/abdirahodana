@@ -3,45 +3,23 @@
 title: "About Hodan Abdirahman" # leave blank to exclude
 number_categories: 0 # set to zero to exclude
 ---
-<div id="main-content">
+<style>
+img.two {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;  /* Makes the image round */
+  display: block;      /* Centers the image horizontally */
+  margin: auto;        /* Centers the image horizontally */
+}
+</style>
+</head>
+<body>
 
-      <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
+<img class="two" src="/img/me.png" alt="drawing"/>
 
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
-          -->
-	<img src="./assets/images/me.png" class="portfolio-header-image" style="border-radius: 50%; width: 467px; height: 467px;">	</a>
-        </div>
+**About Me:**
 
-          <!-- 
-            TODO
+long bio
 
-            - Change the main-title to whatver you want
-            - Change the body-text after that to a quick introduction to what you do
-            - Edit the button text if you feel like it. It will link to the projects section below.
-          -->
-        <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Hello, I'm Hodan.</span>
-              <div class="body-text">I am currently pursuing a major in Economics paired with Data Science, fueled by a deep passion for extracting insights from data. I believe data analytics holds immense potential for revolutionizing business and life as we know it.</div>
-            </div>
-	<div class="body-text">My economics background has honed my critical thinking and ability to analyze markets to identify impactful trends. 
-		My data science coursework has equipped me with technical skills in statistical modeling, data mining, and analytics. 
-		I aspire to blend these strengths to help companies solve complex problems and optimize decisions.
-	</div> 
-	<div class="body-text">In my free time, I enjoy spending quality time with my family, watching documentaries, and staying active through running. 
-		As a curious child, I constantly changed my career ambitions, wanting to be everything from a doctor to an astronaut. This adaptability has led me to data science - the ultimate playground for my inquisitive mind.
-		Data science connects my diverse interests in healthcare, education, economics, and more. As an aspiring data scientist, I can use my analytical skills to tackle problems in any domain. 
-            	This adaptability excites me; I can explore my wide-ranging passions and create data-driven solutions to benefit organizations.
-		<strong> Driven by childhood curiosity, I continuously expand my data science skills to ignite new dreams</strong>.
-	</div>
-	</div>
-	</div>
-	<span class="nav-title" style="color: #c2a3e0;">Data Analysis - Visualization - Storytelling | R | Statistical Analysis</span>
-          </a>    
-    </div>
+**Interests**
+short bio
