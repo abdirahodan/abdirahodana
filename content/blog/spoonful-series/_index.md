@@ -3,7 +3,7 @@ title: A Spoonful of Hugo
 description: |
   A forking fun new feature for series.
 author: Alison Hill
-show_post_thumbnail: false
+show_post_thumbnail: true
 show_author_byline: true
 show_post_date: true
 # for series listing page layout
@@ -12,7 +12,7 @@ layout: list-sidebar # list, list-sidebar, list-grid
 # for list-sidebar layout
 sidebar: 
   title: A Spoonful of Hugo
-  author: Alison Hill
+  author: Hodan Abdirahman
   description: |
     A forking fun new feature for series.
     Even this sidebar offers a ton of customizations!
