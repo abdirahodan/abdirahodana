@@ -22,8 +22,7 @@ img.two {
 
 **About Me:**
 
-I’m an Economics major with a specialization in Data Science, deeply passionate about using data to create meaningful change. With a strong background in data analysis, research, and machine learning, I focus on applying statistical insights to tackle complex issues. My goal is to drive improvements in both the public and environmental sectors, particularly in promoting renewable energy and sustainable practices. I’m committed to helping underprivileged communities by advocating for equitable access to public services and pushing for policies that advance social justice. Through my interdisciplinary approach, I strive to use data as a tool for progress and empowerment.
-
+I'm an Economics major with a specialization in Data Science, deeply passionate about using data to create meaningful change. With a strong background in data analysis, research, and machine learning, I focus on applying statistical insights to tackle complex issues. My goal is to drive improvements in both the public and environmental sectors, particularly in promoting renewable energy and sustainable practices. I'm committed to helping underprivileged communities by advocating for equitable access to public services and pushing for policies that advance social justice. Through my interdisciplinary approach, I strive to use data as a tool for progress and empowerment.
 
 **Work Experience**
 
