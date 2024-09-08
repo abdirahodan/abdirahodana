@@ -26,12 +26,8 @@ I'm an Economics major with a specialization in Data Science, deeply passionate 
 
 **Work Experience**
 
-*Schneider Electric Environmental, Health, and Safety Intern (Over 1 year)*
+##### *Schneider Electric Environmental, Health, and Safety Intern (Over 1 year)*
 
 Schneider Electric, recognized as the most sustainable company in 2024, is a global leader in energy management and automation. As an intern in the Environmental, Health, and Safety department, I focus on data analysis to support workplace safety initiatives. I take raw data and transform it into actionable insights, helping to ensure a safe and sustainable environment for our team. My role combines my passion for sustainability with my skills in data analytics, allowing me to contribute meaningfully to Schneider Electric's ongoing efforts to lead in sustainability and innovation.
 
-**Interests**
-
 #### Data Analytics \| Public Policy \| Environmental Sustainability \| Social Equity \| Research
-
-#### 
