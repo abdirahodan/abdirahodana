@@ -21,6 +21,7 @@ img.two {
 <img class="two" src="/img/me2.png" alt="drawing"/>
 
 **About Me:**
+
 I’m a recent Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
 
 I’m especially interested in social justice, women’s equity, and environmental sustainability. My goal is to advance fair policies, promote renewable energy, and help underrepresented communities access the resources they deserve. Whether it’s supporting women’s rights, advocating for marginalized groups, or encouraging sustainable practices, I believe data can be a powerful tool for empowerment and progress.
