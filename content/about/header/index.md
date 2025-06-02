@@ -18,7 +18,7 @@ img.two {
 
 <body>
 
-<img class="two" src="/img/me.png" alt="drawing"/>
+<img class="two" src="/img/me2.png" alt="drawing"/>
 
 **About Me:**
 
