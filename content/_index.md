@@ -1,6 +1,6 @@
 ---
 title: "Hodan Abdirahman"
-subtitle: "EHS Intern @ Schneider Electric"
+subtitle: ""
 description: ""
 date: 2019-02-18T12:27:33-06:00
 images:
