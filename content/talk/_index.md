@@ -3,7 +3,7 @@ title: Research
 description: |
   Here are some of my research projects:
 show_post_thumbnail: true
-show_author_byline: true
+show_author_byline: false
 show_post_date: true
 show_post_time: true
 # for listing page layout
@@ -27,7 +27,7 @@ sidebar:
 # set up common front matter for all pages inside blog/
 cascade:
   author: "Hodan Abdirahmans"
-  show_author_byline: true
+  show_author_byline: false
   show_post_date: false
   show_post_time: false
   show_disqus_comments: false # see disqusShortname in site config
