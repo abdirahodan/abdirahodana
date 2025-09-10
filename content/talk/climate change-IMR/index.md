@@ -1,3 +1,4 @@
+_Keywords_: Infant Mortality, Climate Change, Environmental Stressors, Social Inequality
 ---
 title: "Exploring Links Between Climate Change, Infant Mortality, and Gender - Based Violence in the U.S."
 subtitle: "Undergraduate Research"
@@ -9,10 +10,6 @@ draft: false
 # layout options: single, single-sidebar
 layout: single
 ---
-_Keywords_: Infant Mortality, Climate Change, Environmental Stressors, Social Inequality
-
-**Access PDF file here.**
-
 <!-- PDF viewer (page-relative path) -->
 <style>
   #myPDF { width: 100%; height: 80vh; }
