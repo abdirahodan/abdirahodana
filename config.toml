@@ -112,11 +112,6 @@ enableEmoji = true
     title = "Research"
     url = "/talk/"
     weight = 3
-  [[menu.header]]
-    name = "Her Equation"
-    title = "Her Equation"
-    url = "/blog/her-equation-series/"
-    weight = 2
     
   # Configure footer  
   [[menu.footer]]
