@@ -6,7 +6,7 @@ date: 2024-08-10
 date_end: "2024-11-21"
 author: "Hodan Abdirahman"
 draft: false
-# layout options: single, single-sidebar
+# layout options: single, single-sidebars
 layout: single
 ---
 _Keywords_: Infant Mortality, Climate Change, Environmental Stressors, Social Inequality
