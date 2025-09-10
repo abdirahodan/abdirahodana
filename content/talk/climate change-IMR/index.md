@@ -10,6 +10,6 @@ draft: false
 # layout options: single, single-sidebar
 layout: single
 ---
-_Keywords_: Infant Mortality, Climate Change, Environmental Stressors, Social Inequality,changes
+_Keywords_: Infant Mortality, Climate Change, Environmental Stressors, Social Inequality
 
 **If you would like to read more, let me know**
