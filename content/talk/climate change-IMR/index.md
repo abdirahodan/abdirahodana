@@ -11,5 +11,14 @@ layout: single
 ---
 
 *Keywords*: imr,climate Change, environmental stressors, social inequality
+<!-- PDF links only (no embed) -->
+<style>
+  .pdf-links { margin: 1rem 0 1.5rem; }
+  .pdf-links a { text-decoration: underline; }
+</style>
 
-**PDF:** [Download](./sample.pdf) · [Open in a new tab](./sample.pdf)
+<p class="pdf-links">
+  <strong>Full paper (PDF):</strong>
+  <a href="./sample.pdf" download="Abdirahman_Climate-IMR-GBV.pdf">Download</a> ·
+  <a href="./sample.pdf" target="_blank" rel="noopener">Open in a new tab</a>
+</p>
