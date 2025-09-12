@@ -4,7 +4,7 @@ description: |
   Series that explores the diverse and vital roles women play in shaping our world.
 author: Hodan Abdirahman
 show_post_thumbnail: true
-show_author_byline: true
+show_author_byline: false
 show_post_date: true
 # for series listing page layout
 layout: list-sidebar # list, list-sidebar, list-grid
@@ -25,7 +25,7 @@ cascade:
   layout: single-series       # for a series, do not change
   series: Her Equation  # name your series
   author: Hodan Abdirahman
-  show_author_byline: true
+  show_author_byline: false
   show_post_date: true
   sidebar:
     text_link_label: ""
