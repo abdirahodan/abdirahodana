@@ -11,23 +11,31 @@ layout: single-sidebar
 ---
 _Keywords_: imr,climate Change, environmental stressors, social inequality
 
-<!-- PDF viewer (page-relative path) -->
+<!-- PDF on the right -->
 <style>
-  #myPDF { width: 100%; height: 80vh; }
-  @media (max-width: 640px) { #myPDF { height: 70vh; } }
+  /* floats inside the main content column */
+  #myPDF {
+    float: right;
+    width: 420px;          /* adjust as you like */
+    height: 70vh;
+    border: 0;
+    margin: 0 0 1rem 1rem; /* space from text */
+  }
+  /* Stack on small screens */
+  @media (max-width: 900px) {
+    #myPDF { float: none; width: 100%; height: 70vh; margin: 1rem 0; }
+  }
 </style>
 
 <iframe
   id="myPDF"
   src="./sample.pdf#toolbar=1&navpanes=0&view=FitH"
-  frameborder="0"
   loading="lazy"
   title="Research PDF"
 ></iframe>
 
 <p>
   If the viewer doesn’t load:
-  <a href="./sample.pdf" download>Download the PDF</a> or
-  <a href="./sample.pdf" target="_blank" rel="noopener">open in a new tab</a>.
+  <a href="./sample.pdf" download>Download the PDF</a> ·
+  <a href="./sample.pdf" target="_blank" rel="noopener">Open in a new tab</a>
 </p>
-
