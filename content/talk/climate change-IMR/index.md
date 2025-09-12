@@ -19,6 +19,6 @@ layout: single
 
 <p class="pdf-links">
   <strong>Full paper (PDF):</strong>
-  <a href="./sample.pdf" download="Abdirahman_Climate-IMR-GBV.pdf">Download</a> ·
-  <a href="./sample.pdf" target="_blank" rel="noopener">Open in a new tab</a>
+  <a href="./sample2.pdf" download="Abdirahman_Climate-IMR-GBV.pdf">Download</a> ·
+  <a href="./sample2.pdf" target="_blank" rel="noopener">Open in a new tab</a>
 </p>
