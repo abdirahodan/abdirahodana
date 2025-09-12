@@ -9,7 +9,7 @@ draft: false
 # layout options: single, single-sidebar
 layout: single
 ---
-_Keywords_: imr, Climate Change, Environmental Stressors, Social Inequality
+_Keywords_: imr,climate Change, environmental stressors, social inequality
 
 <!-- PDF viewer (page-relative path) -->
 <style>
