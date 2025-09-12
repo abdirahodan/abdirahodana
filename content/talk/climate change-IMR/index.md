@@ -6,28 +6,10 @@ date: 2024-08-10
 date_end: "2024-11-21"
 author: "Hodan Abdirahman"
 draft: false
-# layout options: single, single-sidebars
+# layout options: single, single-sidebar
 layout: single
 ---
-_Keywords_: Infant Mortality, Climate Change, Environmental Stressors, Social Inequality
+_Keywords_: imr, Climate Change, Environmental Stressors, Social Inequality
 
-<!-- PDF viewer (page-relative path) -->
-<style>
-  #myPDF { width: 100%; height: 80vh; }
-  @media (max-width: 640px) { #myPDF { height: 70vh; } }
-</style>
-
-<iframe
-  id="myPDF"
-  src="./sample.pdf#toolbar=1&navpanes=0&view=FitH"
-  frameborder="0"
-  loading="lazy"
-  title="Research PDF"
-></iframe>
-
-<p>
-  If the viewer doesn’t load:
-  <a href="./sample.pdf" download>Download the PDF</a> or
-  <a href="./sample.pdf" target="_blank" rel="noopener">open in a new tab</a>.
-</p>
+**Access PDF file here.**
 
