@@ -2,7 +2,7 @@
 title: Her Equation
 description: |
   Series that explores the diverse and vital roles women play in shaping our world.
-author: Hodan Abdirahman
+author: Abdirahman
 show_post_thumbnail: true
 show_author_byline: false
 show_post_date: true
@@ -12,7 +12,7 @@ layout: list-sidebar # list, list-sidebar, list-grid
 # for list-sidebar layout
 sidebar: 
   title: Her Equation
-  author: Hodan Abdirahman
+  author: Abdirahman 1
   description: |
    This series is a data-driven exploration of women’s struggles and power throughout history and today. This series tells diverse stories through numbers, shedding light on the challenges women face—whether in health, income, or representation—and highlighting their resilience and contributions. From climate change to gender-based violence and beyond, "Her Equation" reveals how women’s experiences shape the broader societal equation, showcasing their unique strength and significance.
 
@@ -24,7 +24,7 @@ sidebar:
 cascade:
   layout: single-series       # for a series, do not change
   series: Her Equation  # name your series
-  author: Hodan Abdirahman
+  author:
   show_author_byline: false
   show_post_date: true
   sidebar:
