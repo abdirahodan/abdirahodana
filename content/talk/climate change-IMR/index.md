@@ -7,9 +7,9 @@ date_end: "2024-11-21"
 author: "Hodan Abdirahman"
 draft: false
 # layout options: single, single-sidebar
-layout: single-sidebar
+layout: single
 ---
-**PDF:** [Download](./sample.pdf) · [Open in a new tab](./sample.pdf){target="_blank" rel="noopener"}
 
-_Keywords_: imr,climate Change, environmental stressors, social inequality
+*Keywords*: imr,climate Change, environmental stressors, social inequality
 
+### **PDF:** [Download](./sample.pdf) · [Open in a new tab](./sample.pdf)
