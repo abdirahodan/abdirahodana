@@ -128,7 +128,7 @@ enableEmoji = true
   [[menu.footer]]
     name   = "Email"
     title  = "Email Me"
-    url    = "mailto:yourname@gmail.com"
+    url    = "mailto:abdirahodan@gmail.com"
     weight = 3
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
