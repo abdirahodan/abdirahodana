@@ -22,7 +22,7 @@ sidebar:
 # set up common front matter for all pages inside blog/
 cascade:
   author: "Hodan Abdirahman"
-  show_author_byline: false
+  show_author_byline: true
   show_post_date: true
   show_disqus_comments: false # see disqusShortname in site config
   # for single-sidebar layout
