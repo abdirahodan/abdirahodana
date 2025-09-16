@@ -13,8 +13,6 @@ layout: single
 
 *Keywords*: transportation equity, public transit, smart mobility, urban planning, social justice
 
-This research was <span style="background-color: yellow;">presented</span> at the <span style="background-color: yellow;">2024 Eastern Economic Association Annual Meetings in Boston</span>. ☺️
-
-This research was <mark>presented</mark> at the <mark>2024 Eastern Economic Association Annual Meetings in Boston</mark>. ☺️
+This research was <mark>presented</mark> at the <mark>2024 Eastern Economic Association</mark> Annual Meetings in Boston. ☺️
 
 **If you would like to read more, let me know**
