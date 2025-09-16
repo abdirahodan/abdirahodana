@@ -85,7 +85,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "envelope" # icon name without the 'fa-'
       icon_pack = "fas"
-      url       = "mailto:yourname@gmail.com"
+      url       = "mailto:abdirahodan@gmail.com"
   [[params.social]]
       icon      = "salesforce" # icon name without the 'fa-'
       icon_pack = "fab"
