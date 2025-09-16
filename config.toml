@@ -29,7 +29,7 @@ enableEmoji = true
     
 [params]
   orgName = "Hodan Abdirahman"
-  orgLocal = "Anywhere"
+  orgLocal = "United States"
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
   favicon = "/img/logo.ico"
   logo = "/img/logo.png"
@@ -85,7 +85,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "envelope" # icon name without the 'fa-'
       icon_pack = "fas"
-      url       = "https://abdirahodan.netlify.app/contact/"
+      url       = "mailto:yourname@gmail.com"
   [[params.social]]
       icon      = "salesforce" # icon name without the 'fa-'
       icon_pack = "fab"
@@ -119,11 +119,11 @@ enableEmoji = true
     title = "License"
     url = "/license/"
     weight = 1
-  [[menu.footer]]
-    name = "Contact"
-    title = "Contact form"
-    url = "/contact/"
-    weight = 2
+  #[[menu.footer]]
+   # name = "Contact"
+    #title = "Contact form"
+    #url = "/contact/"
+    #weight = 2
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
