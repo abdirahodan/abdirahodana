@@ -124,6 +124,12 @@ enableEmoji = true
     title = "Contact form"
     url = "/contact/"
     weight = 2
+    
+  [[menu.footer]]
+    name   = "Email"
+    title  = "Email Me"
+    url    = "mailto:yourname@gmail.com"
+    weight = 3
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
