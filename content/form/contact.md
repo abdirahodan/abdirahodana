@@ -4,7 +4,7 @@ name: Contact Us Form
 description: "I appreciate your visit to my site! Should you have any inquiries or wish to connect, please don't hesitate to reach out"
 date: 2019-02-25T13:38:41-06:00
 draft: false
-url: contact
+url: mailto:yourname@gmail.com
 type: form
 layout: split-right # split-right or split-left
 submit_button_label: Send Message
