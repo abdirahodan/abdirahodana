@@ -12,7 +12,7 @@ layout: list-sidebar # list, list-sidebar, list-grid
 # for list-sidebar layout
 sidebar: 
   title: Her Equation
-  author:
+  author: Hodan Abdirahman
   description: |
    This series is a data-driven exploration of women’s struggles and power throughout history and today. This series tells diverse stories through numbers, shedding light on the challenges women face—whether in health, income, or representation—and highlighting their resilience and contributions. From climate change to gender-based violence and beyond, "Her Equation" reveals how women’s experiences shape the broader societal equation, showcasing their unique strength and significance.
 
