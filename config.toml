@@ -119,17 +119,12 @@ enableEmoji = true
     title = "License"
     url = "/license/"
     weight = 1
-  [[menu.footer]]
-    name = "Contact"
-    title = "Contact form"
-    url = "/contact/"
-    weight = 2
     
   [[menu.footer]]
-    name   = "Email"
+    name   = "Contact"
     title  = "Email Me"
     url    = "mailto:abdirahodan@gmail.com"
-    weight = 3
+    weight = 2
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
