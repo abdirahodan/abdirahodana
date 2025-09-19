@@ -1,13 +1,13 @@
 ---
 title: "When Weather Turns Deadly: Climate Change, Infant Health, and Women’s Safety"
 weight: 1
-subtitle: ""
-excerpt: "Grid is the very first CSS module created specifically to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making websites."
+subtitle: "Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis."
+excerpt: ""
 date: 2025-02-18
 draft: false
 ---
 
-Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis
+Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis.
 
 The central question I asked was: How do CO₂ emissions, air pollutants, and extreme weather events shape infant mortality across U.S. states? And how do factors like income inequality and gender-based violence amplify these risks
 
