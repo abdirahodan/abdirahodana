@@ -1,7 +1,7 @@
 ---
 title: "When Weather Turns Deadly: Climate Change, Infant Health, and Women’s Safety"
 weight: 1
-subtitle: "Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis."
+subtitle:"Climate change isn't just about hotter summers and rising seas -- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV)."
 excerpt: ""
 date: 2025-02-18
 draft: false
