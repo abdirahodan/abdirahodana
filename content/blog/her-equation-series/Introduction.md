@@ -1,14 +1,36 @@
 ---
 title: "When Weather Turns Deadly: Climate Change, Infant Health, and Women’s Safety"
 weight: 1
-subtitle:"Climate change isn't just about hotter summers and rising seas -- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV)."
+subtitle: "Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis."
 excerpt: ""
 date: 2025-02-18
 draft: false
 ---
 
-For as long as I can remember, I've been drawn to how numbers reflect real lives. Behind every dataset, there's a story --- of people, communities, and the systems that shape them. Her Equation was born from that belief: that data, equity, and sustainability are deeply connected, and that numbers can give voice to issues that often go unseen.
+Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis.
 
-This series is my space to bridge what I've learned in economics and data science with the causes that matter most to me --- gender equity, sustainability, and social justice. Each post tells a story about how women and vulnerable populations experience the world differently, especially in the face of climate, economic, and social change.
+The central question I asked was: How do CO₂ emissions, air pollutants, and extreme weather events shape infant mortality across U.S. states? And how do factors like income inequality and gender-based violence amplify these risks
 
-Being a woman of color and Muslim, I've always felt a deep responsibility toward social justice --- especially women's rights. My interest isn't only driven by the alarming global reality that over one-third of women and girls experience violence, but also by what I've witnessed and heard from my own country.
+#### Data & Method
+
+-   To answer this, I used national data from agencies like the CDC, EPA, and NOAA. Variables: Infant mortality, CO₂, NO₂, O₃, PM10, extreme weather events, household income.
+
+-   Method: A two-way fixed effects model, which controls for differences across states and years.
+
+-   Analysis Tools: Data cleaning and visualization in R.
+
+This approach made it possible to isolate how climate stressors interact with socioeconomic factors to affect infant health
+
+#### Key Findings
+
+**The CO₂ Paradox**
+
+**NO₂'s Harmful Effects**
+
+**Weather Shocks & Preparedness**
+
+#### Equity Angle
+Across the board, income mattered most. Wealthier states had lower IMR regardless of climate stress, showing that economic stability provides a safety net. But for poor households, environmental shocks like cyclones and pollution worsened vulnerabilities — raising risks of both infant deaths and gender-based violence
+#### Why It Matters
+These findings show that climate change is inseparable from health equity. Policies that fight climate change must also address air quality, income inequality, and GBV support services. Protecting women and children isn’t a side effect of climate policy — it must be central to it.
+Climate policy is health policy. Protecting the planet means protecting people, especially women and children who carry the heaviest burden. By integrating environmental, social, and economic strategies, we can build resilience where it matters most.
