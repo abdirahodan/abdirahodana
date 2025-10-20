@@ -7,30 +7,16 @@ date: 2025-02-18
 draft: false
 ---
 
-Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis.
+For as long as I can remember, I've been drawn to how numbers reflect real lives. Behind every dataset, there's a story --- of people, communities, and the systems that shape them. Her Equation was born from that belief: that data, equity, and sustainability are deeply connected, and that numbers can give voice to issues that often go unseen.
 
-The central question I asked was: How do CO₂ emissions, air pollutants, and extreme weather events shape infant mortality across U.S. states? And how do factors like income inequality and gender-based violence amplify these risks
+This series is my space to bridge what I've learned in economics and data science with the causes that matter most to me --- **gender equity, sustainability, and social justice.** Each post tells a story about how women and vulnerable populations experience the world differently, especially in the face of climate, economic, and social change.
 
-#### Data & Method
+Being a woman of color and Muslim, I've always felt a deep responsibility toward social justice --- especially women's rights. My interest isn't only driven by the alarming global reality that over one-third of women and girls experience violence, but also by what I've witnessed and heard from my own country.
 
--   To answer this, I used national data from agencies like the CDC, EPA, and NOAA. Variables: Infant mortality, CO₂, NO₂, O₃, PM10, extreme weather events, household income.
+It's no secret that when a nation experiences instability, its women often bear the heaviest burdens. In Somalia, I've seen and read about challenges such as child marriage, gender-based violence, and social systems that sometimes fail to protect women because of cultural or clan hierarchies. These stories aren't abstract to me --- they're reminders of why I care so deeply about combining **data and advocacy** to drive change.
 
--   Method: A two-way fixed effects model, which controls for differences across states and years.
+I often ask myself whether violence against women is actually increasing, or whether we're simply becoming more aware through faster access to information. That question fuels my curiosity and inspires my ongoing data projects. One of them focuses on **femicide**, where I analyze how rates differ across nations --- from affluent countries to those struggling with poverty and instability, like South Korea and El Salvador.
 
--   Analysis Tools: Data cleaning and visualization in R.
+I don't have all the answers, but I'm endlessly curious. My hope is that *Her Equation* becomes a space that reminds readers (and myself) that *data isn't just about numbers; it's about people.*
 
-This approach made it possible to isolate how climate stressors interact with socioeconomic factors to affect infant health
-
-#### Key Findings
-
-**The CO₂ Paradox**
-
-**NO₂'s Harmful Effects**
-
-**Weather Shocks & Preparedness**
-
-#### Equity Angle
-Across the board, income mattered most. Wealthier states had lower IMR regardless of climate stress, showing that economic stability provides a safety net. But for poor households, environmental shocks like cyclones and pollution worsened vulnerabilities — raising risks of both infant deaths and gender-based violence
-#### Why It Matters
-These findings show that climate change is inseparable from health equity. Policies that fight climate change must also address air quality, income inequality, and GBV support services. Protecting women and children isn’t a side effect of climate policy — it must be central to it.
-Climate policy is health policy. Protecting the planet means protecting people, especially women and children who carry the heaviest burden. By integrating environmental, social, and economic strategies, we can build resilience where it matters most.
+If you believe in using knowledge for good, you'll feel at home here.
