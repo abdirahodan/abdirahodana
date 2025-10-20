@@ -1,5 +1,5 @@
 ---
-title: "NYPDs Hate Crimes"
+title: "NYPDss Hate Crimes"
 excerpt: "Exploring hate crimes in cities is crucial for community well-being and safety, especially in a diverse setting like New York City."
 date: 2023-12-15
 author: "Hodan Abdirahman"
