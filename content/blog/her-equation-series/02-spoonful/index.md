@@ -4,7 +4,7 @@ weight: 1
 subtitle: "Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis."
 excerpt: ""
 date: 2025-03-10
-draft: false
+draft: true
 ---
 
 Climate change isn't just about hotter summers and rising seas --- it touches the most vulnerable parts of our lives. My research explores how climate stressors like pollution and extreme weather events affect infant mortality rates (IMR) in the United States, and how these pressures connect to gender-based violence (GBV). The findings show that climate change is not just an environmental crisis, but also a public health and equity crisis.
