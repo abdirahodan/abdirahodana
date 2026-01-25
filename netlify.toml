@@ -15,6 +15,6 @@ HUGO_ENV = "production"
 
 [[redirects]]
   from = "/26Nikkah"
-  to = "https://hodanabdirahman.com/2026nikkah"
+  to = "https://preview.canva.site/bcf1b258-a63c-4c49-8305-133daf9766df/hodanabdirahman.com/2026nikkah"
   status = 301
   force = true
