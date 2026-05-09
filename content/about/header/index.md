@@ -1,9 +1,3 @@
----
-## Configure page content in wide column
-title: "About Hodan Abdirahman" # leave blank to exclude
-number_categories: 0 # set to zero to exclude
----
-
 <style>
 .photo-scroll {
   display: flex;
