@@ -1,13 +1,26 @@
+---
+## Configure page content in wide column
+title: "" # leave blank to exclude
+number_categories: 0 # set to zero to exclude
+---
 <style>
+.about-text {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .photo-scroll {
   display: flex;
   gap: 1.2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 1rem 0;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 2rem auto;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
 }
 
 .photo-scroll img {
@@ -18,14 +31,7 @@
   scroll-snap-align: center;
   flex: 0 0 auto;
 }
-
-.about-text {
-  max-width: 850px;
-  margin: 0 auto;
-  text-align: center;
-}
 </style>
-
 
 <div class="photo-scroll">
   <img src="/img/me2.png" alt="Hodan photo 1">
@@ -34,6 +40,8 @@
 </div>
 
 <div class="about-text">
+
+# About Hodan Abdirahman
 
 **About Me:**
 
