@@ -71,9 +71,9 @@ number_categories: 0 # set to zero to exclude
   <img src="/img/me2.png" alt="Hodan photo 1">
   <img src="/img/me3.png" alt="Hodan photo 2">
   <img src="/img/frontpage.png" alt="Hodan photo 3">
-  <img src="/img/me2.png" alt="Hodan photo 1">
-  <img src="/img/me3.png" alt="Hodan photo 2">
-  <img src="/img/frontpage.png" alt="Hodan photo 3">
+  <img src="/img/papillons.jpg" alt="Hodan photo 4">
+  <img src="/img/revoir.jpg" alt="Hodan photo 5">
+  <img src="/img/unicorn-megaphone.png" alt="Hodan photo 6">
 </div>
 
 <div class="about-text">
