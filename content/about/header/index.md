@@ -3,14 +3,6 @@
 title: "" # leave blank to exclude
 number_categories: 0 # set to zero to exclude
 ---
-<div class="about-text">
-
-# About Hodan Abdirahman
-
-### Economics Graduate & Data Science Researcher
-
----
-</div>
 
 <style>
 .photo-scroll {
@@ -68,11 +60,6 @@ article,
 </div>
 
 <div class="about-text">
-
-# About Hodan Abdirahman
-
-### Economics Graduate & Data Science Researcher
-
 ---
 
 **About Me**
