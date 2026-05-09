@@ -5,19 +5,12 @@ number_categories: 0 # set to zero to exclude
 ---
 
 <style>
-
-body {
-  overflow-x: hidden;
-}
-
 .hero-title {
   margin-bottom: 2rem;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
   max-width: 1000px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title h1 {
@@ -37,14 +30,8 @@ body {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 1rem 0;
-  width: 100vw;
   max-width: 1200px;
   margin: 0 auto 2rem auto;
-  justify-content: flex-start;
-
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .photo-scroll img {
@@ -57,14 +44,13 @@ body {
 }
 
 .about-text {
-  width: 100vw;
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
+}
 
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+.about-text p {
+  text-align: center;
 }
 
 .page-main,
@@ -81,7 +67,6 @@ article,
   margin-left: auto !important;
   margin-right: auto !important;
 }
-
 </style>
 
 <div class="about-text hero-title">
@@ -94,11 +79,10 @@ article,
 
 <div class="photo-scroll">
   <img src="/img/me2.png" alt="Hodan photo 1">
-  <img src="/img/me3.png" alt="Hodan photo 2">
-  <img src="/img/frontpage.png" alt="Hodan photo 3">
-  <img src="/img/papillons.jpg" alt="Hodan photo 4">
-  <img src="/img/revoir.jpg" alt="Hodan photo 5">
-  <img src="/img/unicorn-megaphone.png" alt="Hodan photo 6">
+  <img src="/img/me4.png" alt="Hodan photo 2">
+  <img src="/img/me5.JPG" alt="Hodan photo 3">
+  <img src="/img/me6.jpeg" alt="Hodan photo 4">
+  
 </div>
 
 <div class="about-text">
