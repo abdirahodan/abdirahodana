@@ -5,12 +5,21 @@ number_categories: 0 # set to zero to exclude
 ---
 
 <style>
-img.two {
-  height: 80%;
-  width: 80%;
-  border-radius: 50%;  /* Makes the image round */
-  display: block;      /* Centers the image horizontally */
-  margin: auto;        /* Centers the image horizontally */
+.photo-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+}
+
+.photo-scroll img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 24px;
+  scroll-snap-align: center;
+  flex: 0 0 auto;
 }
 </style>
 
@@ -18,8 +27,11 @@ img.two {
 
 <body>
 
-<img class="two" src="/img/me2.png" alt="drawing"/>
-
+<div class="photo-scroll">
+  <img src="/img/me2.png" alt="Hodan photo 1">
+  <img src="/img/me3.png" alt="Hodan photo 2">
+  <img src="/img/frontpage.png" alt="Hodan photo 3">
+</div>
 **About Me:**
 
 I'm a recent Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
