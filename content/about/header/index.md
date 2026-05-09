@@ -3,6 +3,14 @@
 title: "" # leave blank to exclude
 number_categories: 0 # set to zero to exclude
 ---
+<div class="about-text">
+
+# About Hodan Abdirahman
+
+### Economics Graduate & Data Science Researcher
+
+---
+</div>
 
 <style>
 .photo-scroll {
@@ -67,7 +75,7 @@ article,
 
 ---
 
-## About Me
+**About Me**
 
 I’m a recent Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
 
@@ -75,16 +83,15 @@ I’m especially interested in social justice, women’s equity, and environment
 
 ---
 
-## Work Experience
+**Work Experience**
 
-### *Schneider Electric Environmental, Health, and Safety Intern (Aug 2023 – Jan 2025)*
+##### *Schneider Electric Environmental, Health, and Safety Intern (Aug 2023- Jan 2025)*
 
 Schneider Electric, recognized as the most sustainable company in 2024, is a global leader in energy management and automation. As an intern in the Environmental, Health, and Safety department, I focused on data analysis to support workplace safety initiatives.
 
 I transformed raw data into actionable insights, helping ensure a safe and sustainable environment for employees while contributing to Schneider Electric’s broader sustainability mission.
 
-### <a href="https://blog.se.com/life-at-schneider-electric/2024/07/25/interns-making-an-impact/" target="_blank" rel="noopener">Featured in Schneider Electric's Intern Impact Campaign</a>
+##### <a href="https://blog.se.com/life-at-schneider-electric/2024/07/25/interns-making-an-impact/" target="_blank" rel="noopener">Featured in Schneider Electric's Intern Impact Campaign</a>
 
-### Data Analytics | Public Policy | Environmental Sustainability | Social Equity | Research
 
 </div>
