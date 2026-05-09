@@ -3,7 +3,7 @@
 title: "" # leave blank to exclude
 number_featured: 0 # pulling from mainSections in config.toml
 number_categories: 0 # set to zero to exclude
-show_intro: true
+show_intro: false
 intro: |
 show_outro: false
 outro: |
