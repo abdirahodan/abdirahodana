@@ -3,9 +3,9 @@ title: Her Equation
 description: |
   Series that explores the diverse and vital roles women play in shaping our world.
 author: Abdirahman
-show_post_thumbnail: true
+show_post_thumbnail: false
 show_author_byline: false
-show_post_date: true
+show_post_date: false
 # for series listing page layout
 layout: list-sidebar # list, list-sidebar, list-grid
 
@@ -26,7 +26,7 @@ cascade:
   series: Her Equation  # name your series
   author:
   show_author_byline: false
-  show_post_date: true
+  show_post_date: false
   sidebar:
     text_link_label: ""
     text_link_url: ""
