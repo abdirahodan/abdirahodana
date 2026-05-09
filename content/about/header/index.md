@@ -6,8 +6,18 @@ number_categories: 0 # set to zero to exclude
 
 <style>
 
+body {
+  overflow-x: hidden;
+}
+
 .hero-title {
   margin-bottom: 2rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 1000px;
+  text-align: center;
 }
 
 .hero-title h1 {
@@ -27,10 +37,14 @@ number_categories: 0 # set to zero to exclude
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 1rem 0;
-  width: 100%;
-  max-width: 1100px;
+  width: 100vw;
+  max-width: 1200px;
   margin: 0 auto 2rem auto;
-  justify-content: center;
+  justify-content: flex-start;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .photo-scroll img {
@@ -43,18 +57,29 @@ number_categories: 0 # set to zero to exclude
 }
 
 .about-text {
+  width: 100vw;
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .page-main,
 .page-content,
 .article-content,
-.content {
+.content,
+main,
+article,
+.measure,
+.measure-wide,
+.measure-narrow {
   max-width: 1400px !important;
   width: 100% !important;
-  margin: 0 auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 </style>
@@ -78,7 +103,7 @@ number_categories: 0 # set to zero to exclude
 
 <div class="about-text">
 
-**About Me**
+## About Me
 
 I’m a recent Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
 
@@ -86,15 +111,14 @@ I’m especially interested in social justice, women’s equity, and environment
 
 ---
 
-**Work Experience**
+## Work Experience
 
-##### *Schneider Electric Environmental, Health, and Safety Intern (Aug 2023- Jan 2025)*
+### *Schneider Electric Environmental, Health, and Safety Intern (Aug 2023 – Jan 2025)*
 
 Schneider Electric, recognized as the most sustainable company in 2024, is a global leader in energy management and automation. As an intern in the Environmental, Health, and Safety department, I focused on data analysis to support workplace safety initiatives.
 
 I transformed raw data into actionable insights, helping ensure a safe and sustainable environment for employees while contributing to Schneider Electric’s broader sustainability mission.
 
-##### <a href="https://blog.se.com/life-at-schneider-electric/2024/07/25/interns-making-an-impact/" target="_blank" rel="noopener">Featured in Schneider Electric's Intern Impact Campaign</a>
-
+### <a href="https://blog.se.com/life-at-schneider-electric/2024/07/25/interns-making-an-impact/" target="_blank" rel="noopener">Featured in Schneider Electric's Intern Impact Campaign</a>
 
 </div>
