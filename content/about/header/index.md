@@ -71,7 +71,14 @@ article,
 
 <div class="about-text hero-title">
 
-#### Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
+### Hello, I’m Hodan
+
+<div class="focus-tags">
+  <span>Data Analytics</span>
+  <span>Public Policy</span>
+  <span>Sustainability</span>
+  <span>Social Equity</span>
+</div>
 
 </div>
 
