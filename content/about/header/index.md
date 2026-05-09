@@ -32,9 +32,6 @@ number_categories: 0 # set to zero to exclude
 }
 </style>
 
-</head>
-
-<body>
 
 <div class="photo-scroll">
   <img src="/img/me2.png" alt="Hodan photo 1">
