@@ -3,11 +3,8 @@
 title: "" # leave blank to exclude
 number_categories: 0 # set to zero to exclude
 ---
-<div class="about-text hero-title">
-  
-An Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
 
-</div>
+<style>
 
 .hero-title {
   margin-bottom: 2rem;
@@ -24,7 +21,6 @@ An Economics graduate with a specialization in Data Science, passionate about us
   font-size: 1rem;
 }
 
-<style>
 .photo-scroll {
   display: flex;
   gap: 1.5rem;
@@ -52,26 +48,24 @@ An Economics graduate with a specialization in Data Science, passionate about us
   text-align: center;
 }
 
-.about-text p {
-  text-align: center;
-}
-
-/* fixes Hugo Apéro left alignment */
-main,
-article,
-.measure,
-.measure-wide,
-.measure-narrow,
 .page-main,
 .page-content,
 .article-content,
 .content {
   max-width: 1400px !important;
   width: 100% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin: 0 auto !important;
 }
+
 </style>
+
+<div class="about-text hero-title">
+
+# About Hodan Abdirahman
+
+### Data Analyst | Economics Graduate | Sustainability & Social Impact
+
+</div>
 
 <div class="photo-scroll">
   <img src="/img/me2.png" alt="Hodan photo 1">
