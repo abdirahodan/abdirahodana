@@ -3,6 +3,26 @@
 title: "" # leave blank to exclude
 number_categories: 0 # set to zero to exclude
 ---
+<div class="about-text hero-title">
+  
+An Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
+
+</div>
+
+.hero-title {
+  margin-bottom: 2rem;
+}
+
+.hero-title h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title h3 {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
 
 <style>
 .photo-scroll {
