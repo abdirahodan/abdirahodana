@@ -4,7 +4,7 @@ weight: 1
 subtitle: ""
 excerpt: ""
 date: 2025-02-18
-draft: false
+draft: true
 ---
 
 For as long as I can remember, I’ve been drawn to how numbers reflect real lives. Behind every dataset, there’s a story — of people, communities, and the systems that shape them. Her Equation was born from that belief: that data, equity, and sustainability are deeply connected, and that numbers can give voice to issues that often go unseen.
