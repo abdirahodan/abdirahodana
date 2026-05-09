@@ -1,6 +1,6 @@
 ---
 title: "Hodan Abdirahman"
-subtitle: ""
+subtitle: "Economics Graduate | Data Science & Sustainability Analytics"
 description: "Economics Graduate | Data Science & Sustainability Analytics"
 date: 2019-02-18T12:27:33-06:00
 images:
