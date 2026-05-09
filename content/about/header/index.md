@@ -57,10 +57,12 @@ article,
   <img src="/img/me2.png" alt="Hodan photo 1">
   <img src="/img/me3.png" alt="Hodan photo 2">
   <img src="/img/frontpage.png" alt="Hodan photo 3">
+  <img src="/img/me2.png" alt="Hodan photo 1">
+  <img src="/img/me3.png" alt="Hodan photo 2">
+  <img src="/img/frontpage.png" alt="Hodan photo 3">
 </div>
 
 <div class="about-text">
----
 
 **About Me**
 
