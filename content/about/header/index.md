@@ -71,14 +71,8 @@ article,
 
 <div class="about-text hero-title">
 
-### Hello, I’m Hodan
-
-<div class="focus-tags">
-  <span>Data Analytics</span>
-  <span>Public Policy</span>
-  <span>Sustainability</span>
-  <span>Social Equity</span>
-</div>
+# Hello, I’m Hodan
+#### I’m a recent Economics graduate with a specialization in Data Science, passionate about using data to drive positive change!
 
 </div>
 
@@ -87,10 +81,16 @@ article,
   <img src="/img/me4.png" alt="Hodan photo 2">
   <img src="/img/me5.JPG" alt="Hodan photo 3">
   <img src="/img/me6.jpeg" alt="Hodan photo 4">
+  <img src="/img/me8.jpeg" alt="Hodan photo 5">
+  <img src="/img/me9.jpg" alt="Hodan photo 6">
+  <img src="/img/me10.jpg" alt="Hodan photo 7">
+  <img src="/img/me11.jpg" alt="Hodan photo 8">
   
 </div>
 
 <div class="about-text">
+
+My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
 
 I’m especially interested in social justice, women’s equity, and environmental sustainability. My goal is to advance fair policies, promote renewable energy, and help underrepresented communities access the resources they deserve. Whether it’s supporting women’s rights, advocating for marginalized groups, or encouraging sustainable practices, I believe data can be a powerful tool for empowerment and progress.
 
