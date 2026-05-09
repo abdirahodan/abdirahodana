@@ -7,19 +7,28 @@ number_categories: 0 # set to zero to exclude
 <style>
 .photo-scroll {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 1rem 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
 }
 
 .photo-scroll img {
-  width: 280px;
-  height: 280px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
   border-radius: 24px;
   scroll-snap-align: center;
   flex: 0 0 auto;
+}
+
+.about-text {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
 }
 </style>
 
@@ -32,6 +41,9 @@ number_categories: 0 # set to zero to exclude
   <img src="/img/me3.png" alt="Hodan photo 2">
   <img src="/img/frontpage.png" alt="Hodan photo 3">
 </div>
+
+<div class="about-text">
+
 **About Me:**
 
 I'm a recent Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
@@ -47,3 +59,4 @@ Schneider Electric, recognized as the most sustainable company in 2024, is a glo
 #####  <a href="https://blog.se.com/life-at-schneider-electric/2024/07/25/interns-making-an-impact/" target="_blank" rel="noopener"> Featured in the company's Intern's Day campaign </a>.
 
 ##### Data Analytics \| Public Policy \| Environmental Sustainability \| Social Equity \| Research
+</div>
