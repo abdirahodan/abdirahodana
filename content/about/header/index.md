@@ -18,29 +18,43 @@ number_categories: 0 # set to zero to exclude
   margin-bottom: 0.5rem;
 }
 
-.hero-title h3 {
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 1rem;
+.hero-title h4 {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
-.photo-scroll {
+.carousel {
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  overflow: hidden;
+}
+
+.carousel-track {
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 1rem 0;
-  max-width: 1200px;
-  margin: 0 auto 2rem auto;
+  width: max-content;
+  animation: scrollPhotos 35s linear infinite;
 }
 
-.photo-scroll img {
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-track img {
   width: 320px;
   height: 320px;
   object-fit: cover;
   border-radius: 24px;
-  scroll-snap-align: center;
   flex: 0 0 auto;
+}
+
+@keyframes scrollPhotos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .about-text {
@@ -72,20 +86,28 @@ article,
 <div class="about-text hero-title">
 
 # Hello, I’m Hodan
+
 #### I’m a recent Economics graduate with a specialization in Data Science, passionate about using data to drive positive change!
 
 </div>
 
-<div class="photo-scroll">
-  <img src="/img/me2.png" alt="Hodan photo 1">
-  <img src="/img/me4.png" alt="Hodan photo 2">
-  <img src="/img/me5.JPG" alt="Hodan photo 3">
-  <img src="/img/me6.jpeg" alt="Hodan photo 4">
-  <img src="/img/me8.jpeg" alt="Hodan photo 5">
-  <img src="/img/me9.jpg" alt="Hodan photo 6">
-  <img src="/img/me10.jpg" alt="Hodan photo 7">
-  <img src="/img/me11.jpg" alt="Hodan photo 8">
-  
+<div class="carousel">
+  <div class="carousel-track">
+    <img src="/img/me2.png" alt="Hodan photo 1">
+    <img src="/img/me5.JPG" alt="Hodan photo 3">
+    <img src="/img/me6.jpeg" alt="Hodan photo 4">
+    <img src="/img/me4.png" alt="Hodan photo 2">
+    <img src="/img/me9.jpg" alt="Hodan photo 6">
+    <img src="/img/me11.jpg" alt="Hodan photo 7">
+
+    <img src="/img/me2.png" alt="Hodan photo 1 duplicate">
+    <img src="/img/me4.png" alt="Hodan photo 2 duplicate">
+    <img src="/img/me5.JPG" alt="Hodan photo 3 duplicate">
+    <img src="/img/me6.jpeg" alt="Hodan photo 4 duplicate">
+    <img src="/img/me8.jpeg" alt="Hodan photo 5 duplicate">
+    <img src="/img/me9.jpg" alt="Hodan photo 6 duplicate">
+    <img src="/img/me11.jpg" alt="Hodan photo 7 duplicate">
+  </div>
 </div>
 
 <div class="about-text">
