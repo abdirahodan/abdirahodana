@@ -1,7 +1,8 @@
 ---
 title: "Hodan Abdirahman"
 subtitle: "Economics Graduate | Data Science & Sustainability Analytics"
-description: "📍Based in the Greater Boston Area"
+subtitle: "📍Based in Boston"
+description: ""
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/frontpage.png
