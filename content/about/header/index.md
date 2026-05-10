@@ -110,7 +110,7 @@ article,
 
 I use data, research, and storytelling to explore issues connected to equity, sustainability, public policy, and community impact.
 
-<img class="profile-photo" src="/img/me2.jpg" alt="Hodan portrait">
+<img class="profile-photo" src="/img/me2.png" alt="Hodan portrait">
 
 </div>
 
@@ -138,26 +138,26 @@ I transformed raw data into actionable insights, helping ensure a safe and susta
 
 ## More About Me
 
-Outside of data and research, I enjoy reading, learning new skills, exploring creative projects, and building work that connects personal storytelling with social impact.
+My hobbies include reading, running, and drinking a lot of coffee — seriously, you’ll almost never see me without a cup in my hand. I practically live in coffee shops; I love the atmosphere, the aesthetic, and of course a really good cup of coffee.
 
-I’m especially drawn to topics involving survival, poverty, resilience, sustainability, women’s equity, and community empowerment.
+I’ve been running for a few years, but recently I’ve started taking it more seriously and I’m hoping to attempt my first marathon next year. I love the sense of challenge, discipline, and connection to nature that comes with it.
+
+Outside of that, I enjoy spending time with my husband, being outdoors, and appreciating the little things in life.☺️
 
 </div>
 
 <div class="carousel">
-  <div class="carousel-track">
+  <div class="carousel-track" id="carouselTrack">
     <img src="/img/me2.png" alt="Hodan photo 1">
     <img src="/img/me4.png" alt="Hodan photo 2">
     <img src="/img/me5.JPG" alt="Hodan photo 3">
     <img src="/img/me6.jpeg" alt="Hodan photo 4">
     <img src="/img/me8.jpeg" alt="Hodan photo 5">
     <img src="/img/me11.jpg" alt="Hodan photo 6">
-
-    <img src="/img/me2.png" alt="Hodan photo 1 duplicate">
-    <img src="/img/me4.png" alt="Hodan photo 2 duplicate">
-    <img src="/img/me5.JPG" alt="Hodan photo 3 duplicate">
-    <img src="/img/me6.jpeg" alt="Hodan photo 4 duplicate">
-    <img src="/img/me8.jpeg" alt="Hodan photo 5 duplicate">
-    <img src="/img/me11.jpg" alt="Hodan photo 6 duplicate">
   </div>
 </div>
+
+<script>
+  const track = document.getElementById("carouselTrack");
+  track.innerHTML += track.innerHTML;
+</script>
