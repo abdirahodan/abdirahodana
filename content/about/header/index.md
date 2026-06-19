@@ -106,10 +106,6 @@ article,
 
 # Hello, I’m Hodan
 
-#### Data Analyst | Economics Graduate | Sustainability & Social Impact
-
-I use data, research, and storytelling to explore issues connected to equity, sustainability, public policy, and community impact.
-
 <img class="profile-photo" src="/img/me2.png" alt="Hodan portrait">
 
 </div>
