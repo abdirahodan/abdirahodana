@@ -130,6 +130,7 @@ I transformed raw data into actionable insights, helping ensure a safe and susta
 
 ### <a href="https://blog.se.com/life-at-schneider-electric/2024/07/25/interns-making-an-impact/" target="_blank" rel="noopener">Featured in Schneider Electric's Intern Impact Campaign</a>
 
+<!--
 </div>
 
 <div class="carousel">
@@ -142,7 +143,7 @@ I transformed raw data into actionable insights, helping ensure a safe and susta
     <img src="/img/me11.jpg" alt="Hodan photo 6">
   </div>
 </div>
-
+-->
 <script>
   const track = document.getElementById("carouselTrack");
   track.innerHTML += track.innerHTML;
