@@ -134,16 +134,6 @@ I transformed raw data into actionable insights, helping ensure a safe and susta
 
 ### <a href="https://blog.se.com/life-at-schneider-electric/2024/07/25/interns-making-an-impact/" target="_blank" rel="noopener">Featured in Schneider Electric's Intern Impact Campaign</a>
 
----
-
-## More About Me
-
-My hobbies include reading, running, and drinking a lot of coffee — seriously, you’ll almost never see me without a cup in my hand. I practically live in coffee shops; I love the atmosphere, the aesthetic, and of course a really good cup of coffee.
-
-I’ve been running for a few years, but recently I’ve started taking it more seriously and I’m hoping to attempt my first marathon next year. I love the sense of challenge, discipline, and connection to nature that comes with it.
-
-Outside of that, I enjoy spending time with my husband, being outdoors, and appreciating the little things in life.☺️
-
 </div>
 
 <div class="carousel">
