@@ -114,9 +114,7 @@ article,
 
 ## About Me
 
-I’m a recent Economics graduate with a specialization in Data Science, passionate about using data to drive positive change. My experience includes data analysis, research, and machine learning, and I enjoy applying these skills to address real-world challenges.
-
-I’m especially interested in social justice, women’s equity, and environmental sustainability. My goal is to advance fair policies, promote renewable energy, and help underrepresented communities access the resources they deserve.
+I am a Business Analytics graduate student with a bachelor’s degree in Economics and experience in environmental data analysis, quantitative research, and reporting automation. I am interested in using economic and data-driven analysis to understand renewable energy markets, climate policy, infrastructure, and sustainability challenges.
 
 ---
 
@@ -124,9 +122,7 @@ I’m especially interested in social justice, women’s equity, and environment
 
 ### *Schneider Electric Environmental, Health, and Safety Intern (Aug 2023 – Jan 2025)*
 
-Schneider Electric, recognized as the most sustainable company in 2024, is a global leader in energy management and automation. As an intern in the Environmental, Health, and Safety department, I focused on data analysis to support workplace safety initiatives.
-
-I transformed raw data into actionable insights, helping ensure a safe and sustainable environment for employees while contributing to Schneider Electric’s broader sustainability mission.
+During my Environmental, Health & Safety internship at Schneider Electric, I built and maintained centralized datasets, automated reporting workflows, analyzed operational and risk trends, and developed dashboards and executive visuals. I collaborated with engineering, operations, quality, and EHS stakeholders to improve reporting practices and support a North American risk-assessment initiative.
 
 ### <a href="https://blog.se.com/life-at-schneider-electric/2024/07/25/interns-making-an-impact/" target="_blank" rel="noopener">Featured in Schneider Electric's Intern Impact Campaign</a>
 
