@@ -106,7 +106,7 @@ article,
 
 # Hello, I’m Hodan
 
-<img class="profile-photo" src="/img/me2.png" alt="Hodan portrait">
+<img class="profile-photo" src="/img/me122.png" alt="Hodan portrait">
 
 </div>
 
