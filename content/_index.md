@@ -1,7 +1,7 @@
 ---
 title: "Hodan Abdirahman"
-subtitle: "Business Analytics Graduate Student | Economics, Energy & Sustainability Analytics"
-description: ""
+subtitle: "Greater Boston Area"
+description: "Business Analytics Graduate Student | Economics, Energy & Sustainability Analytics"
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/frontpage.png
