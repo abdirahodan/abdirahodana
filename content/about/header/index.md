@@ -113,8 +113,11 @@ article,
 <div class="about-text">
 
 ## About Me
+I'm a Business Analytics graduate student with a B.S. in Economics and a concentration in Data Science. My background includes environmental data analysis, quantitative research, and reporting automation.
 
-I am a Business Analytics graduate student with a bachelor’s degree in Economics and experience in environmental data analysis, quantitative research, and reporting automation. I am interested in using economic and data-driven analysis to understand renewable energy markets, climate policy, infrastructure, and sustainability challenges.
+I'm passionate about using data to uncover insights, improve decision-making, and solve real-world problems across healthcare, economics, energy, and sustainability. I'm currently expanding my knowledge of healthcare analytics, exploring how data can improve healthcare operations, resource allocation, and patient outcomes.
+
+My technical skills include SQL, Python, R, Tableau, and Power BI, with experience in data analysis, dashboard development, and data visualization.
 
 ---
 
